@@ -1,0 +1,151 @@
+.experience-card {
+    background-color: $light;
+    z-index: 1;
+    border: 1px solid rgba($color: $dark, $alpha: 10%);
+    border-radius: 10px;
+}
+
+.experience-card-list-item {
+    padding: 40px 30px;
+
+    @media #{$big-device,$laptop-device} {
+        padding: 50px 70px;
+
+    }
+
+
+    @media #{$desktop-device,$tablet-device} {
+        padding: 40px 30px;
+
+    }
+
+
+    border-bottom: 1px solid rgba($color: $dark, $alpha: 10%);
+
+    &:last-child {
+        border-bottom: 0;
+    }
+}
+
+.experience-duration {
+    display: inline-block;
+    padding: 10px 15px;
+    line-height: 1;
+    margin-bottom: 20px;
+    border: 1px solid $dark;
+    border-radius: 5px;
+}
+
+.experience-title {
+    font-size: 24px;
+    margin-bottom: 0;
+
+    @media #{$large-mobile} {
+        font-size: 22px;
+
+    }
+}
+
+.experience-shape-top,
+.experience-shape-bottom {
+    z-index: -1;
+}
+
+.experience-shape-top {
+    right: 30px;
+}
+
+
+.skills-card {
+    padding: 40px 40px;
+    border: 1px solid rgba($color: $dark, $alpha: 10%);
+    z-index: 1;
+    border-radius: 10px;
+
+    @media #{$big-device} {
+        padding: 50px 70px;
+
+    }
+
+    @media #{$laptop-device} {
+        padding: 50px 50px;
+
+    }
+
+
+    @media #{$desktop-device,$tablet-device} {
+        padding: 50px 50px;
+
+    }
+
+
+}
+
+
+.skill-list-item {
+    max-width: 230px;
+
+    @media #{$large-mobile} {
+        max-width: 200px;
+
+    }
+    @media #{$small-mobile} {
+        max-width: 230px;
+
+    }
+
+    text-align: center;
+    padding: 40px 40px 50px;
+
+    @media #{$large-mobile} {
+        padding: 40px 15px 50px;
+
+    }
+
+    border: 1px solid rgba($color: $dark, $alpha: 10%);
+    border-radius: 140px;
+}
+
+.skill-heading {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.radial-progress {
+    width: 150px;
+    transform: rotate(-90deg);
+    border-radius: 50%;
+}
+
+.radial-progress circle {
+    fill: transparent;
+    stroke: #fff;
+}
+
+.radial-progress circle.bar-static {
+    // stroke: #5cbc2b !important;
+    stroke: #fff !important;
+}
+
+.radial-progress circle.bar--animated {
+    stroke-dasharray: 219.91148575129;
+    stroke: $primary;
+    stroke-dashoffset: 219.91148575129;
+    stroke-width: 10px;
+    stroke-linecap: round;
+}
+
+.radial-progress text {
+    font-family: $Outfit;
+    fill: #000;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 500;
+    text-anchor: middle;
+}
+
+.skill-shape {
+    z-index: -1;
+}

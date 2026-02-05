@@ -1,0 +1,148 @@
+.hero-section {
+    padding-top: 100px;
+    padding-bottom: 80px;
+
+    @media #{$big-device} {
+        padding-top: 220px;
+        padding-bottom: 170px;
+    }
+
+    @media #{$laptop-device} {
+        padding-top: 180px;
+        padding-bottom: 140px;
+    }
+
+    @media #{$desktop-device} {
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+
+    @media #{$tablet-device} {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    position: relative;
+    z-index: 1;
+}
+
+.hero-title {
+
+    font-size: 38px;
+
+    @media #{$large-mobile} {
+        font-size: 65px;
+
+    }
+
+    @media #{$extra-small-mobile} {
+        font-size: 38px;
+
+    }
+
+    @media #{$tablet-device} {
+        font-size: 88px;
+
+    }
+
+    @media #{$desktop-device} {
+        font-size: 66px;
+
+    }
+
+
+    @media #{$big-device,$laptop-device} {
+        max-width: 960px;
+        line-height: 1;
+        margin-bottom: 55px;
+    }
+
+    @media #{$big-device} {
+        font-size: 120px;
+    }
+
+    @media #{$laptop-device} {
+        font-size: 110px;
+    }
+
+    @media #{$extraBig-device} {
+        font-size: 140px;
+        max-width: 1130px;
+    }
+
+    margin-bottom: 30px;
+    line-height: 1.2;
+
+    span {
+        font-weight: 250;
+    }
+}
+
+.hero-arrow {
+    margin-bottom: 30px;
+
+    @media #{$big-device,$laptop-device} {
+        margin-bottom: 65px;
+    }
+}
+
+.hero-text {
+    max-width: 678px;
+    margin-bottom: 30px;
+
+    @media #{$big-device,$laptop-device} {
+        margin-bottom: 70px;
+    }
+
+    font-size: 20px;
+    line-height: 2;
+}
+
+.person-image-card-wrap {
+
+
+    @media #{$laptop-device} {
+        position: absolute;
+        bottom: -180px;
+
+    }
+
+    @media #{$big-device} {
+        position: absolute;
+        bottom: -130px;
+
+    }
+
+    @media #{$laptop-device} {
+        right: 70px;
+
+    }
+
+    @media #{$big-device} {
+        right: 150px;
+
+    }
+
+    @media #{$extraBig-device} {
+        right: 290px;
+    }
+}
+
+.hero-shape-top {
+    right: 90px;
+    z-index: -1;
+
+    @media #{$large-mobile} {
+        right: 30px;
+    }
+
+}
+
+.hero-shape-bottom {
+    left: 90px;
+    z-index: -1;
+
+    @media #{$large-mobile} {
+        left: 30px;
+    }
+}

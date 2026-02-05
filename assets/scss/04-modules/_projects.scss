@@ -1,0 +1,172 @@
+.project-details-icon-lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 18px;
+
+        @media #{$large-mobile} {
+            font-size: 16px;
+        }
+
+        @media #{$small-mobile} {
+            gap: 10px;
+            font-size: 12px;
+        }
+
+
+        span {
+            line-height: 1;
+        }
+    }
+}
+
+.brand-check-list {
+    margin-top: 65px;
+    margin-bottom: 60px;
+    gap: 50px;
+
+    @media #{$big-device,$laptop-device} {
+        gap: 120px;
+
+    }
+
+    @media #{$desktop-device} {
+        gap: 60px;
+
+    }
+
+    @media #{$large-mobile} {
+        gap: 60px;
+    }
+
+    @media #{$small-mobile} {
+        gap: 25px;
+    }
+
+}
+
+.project-details-text {
+    max-width: 790px;
+}
+
+.category-card {
+    padding: 30px 30px;
+
+    @media #{$big-device,$laptop-device} {
+        padding: 45px 60px;
+
+    }
+
+    @media #{$desktop-device} {
+        padding: 30px 25px;
+
+    }
+
+    background-color: $primary;
+    border-radius: 15px;
+    box-shadow: -15px 15px 0px -7px $dark;
+}
+
+.category-card-list-item {
+    margin-bottom: 40px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.category-card-sub {
+    color: $dark;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.category-card-title {
+    font-weight: 500;
+    font-size: 22px;
+    color: $dark;
+    margin-bottom: 0;
+}
+
+.related-product-section {
+    z-index: 1;
+}
+
+
+.related-product-card {
+    padding: 15px 15px 25px;
+    border: 1px solid rgba($color: $dark, $alpha: 10%);
+    border-radius: 10px;
+    transition: $transition-base;
+
+    @media #{$big-device,$laptop-device} {
+        padding: 15px 15px 25px;
+
+    }
+
+
+    @media #{$desktop-device,$tablet-device} {
+        padding: 15px 15px 25px;
+
+    }
+
+}
+
+.related-product-thumb {
+    margin-bottom: 22px;
+}
+
+.related-product-title {
+    font-size: 24px;
+    margin-top: 20px;
+
+
+    @media #{$large-mobile} {
+        font-size: 22px;
+    }
+
+
+}
+
+
+.related-product-shape-top,
+.related-product-shape-bottom {
+    z-index: -1;
+}
+
+.related-product-shape-bottom {
+    right: 82px;
+
+    @media #{$large-mobile} {
+        right: 30px;
+    }
+}
+
+.related-product-card-style-one {
+    background-color: $primary;
+}
+
+.related-product-card-style-two {
+    background-color: $light;
+
+    &:hover {
+        background-color: $primary;
+        border-color: $dark;
+    }
+}
+
+
+.project-details-title {
+    color: $dark;
+    font-family: $Outfit;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.181;
+
+}

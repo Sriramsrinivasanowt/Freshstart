@@ -1,0 +1,87 @@
+.portfolio-section {
+    z-index: 1;
+}
+
+.portfolio-card {
+    padding: 20px 20px 10px;
+    border: 1px solid rgba($color: $dark, $alpha: 10%);
+    border-radius: 10px;
+    transition: $transition-base;
+
+    @media #{$big-device,$laptop-device} {
+        padding: 50px 50px 40px;
+
+    }
+
+
+    @media #{$desktop-device,$tablet-device} {
+        padding: 30px 30px 20px;
+
+    }
+
+}
+
+.portfolio-thumb {
+    margin-bottom: 22px;
+}
+
+.portfolio-title {
+    font-size: 24px;
+    margin-top: 20px;
+
+
+    @media #{$large-mobile} {
+        font-size: 22px;
+    }
+
+    @media #{$big-device,$laptop-device} {
+        font-size: 30px;
+
+    }
+
+
+    @media #{$tablet-device} {
+        font-size: 26px;
+
+    }
+
+}
+
+.portfolio-row .col-md-6:nth-child(even) .portfolio-card {
+
+    @media #{$big-device,$laptop-device,$desktop-device,$tablet-device} {
+        margin-top: 70px;
+
+    }
+}
+
+.portfolio-shape-top,
+.portfolio-shape-bottom {
+    z-index: -1;
+}
+
+.portfolio-shape-bottom {
+    right: 82px;
+
+    @media #{$large-mobile} {
+        right: 30px;
+    }
+}
+
+.portfolio-card-style-one {
+    background-color: $primary;
+    transition: all 0.3s;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.portfolio-card-style-two {
+    background-color: $light;
+
+    &:hover {
+        background-color: $primary;
+        border-color: $dark;
+    }
+}

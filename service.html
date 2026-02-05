@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Rexon - Personal Portfolio Template</title>
+    <meta name="AdsBot-Google" content="noindex follow" />
+    <meta name="description" content="Rexon - Personal Portfolio Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
+
+    <!-- CSS (Font, Vendor, Icon, Plugins & Style CSS files) -->
+
+    <!-- Font CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS (Bootstrap & Icon Font) -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+
+    <!-- Plugins CSS (All Plugins Files) -->
+    <link rel="stylesheet" href="assets/css/plugins/aos.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/pages/service.css">
+
+</head>
+
+<body>
+    <!-- Header start -->
+    <div class="container-fluid">
+        <header id="sticky-header" class="header position-absolute w-100 z-3">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="flex-shrink-1">
+                    <a href="index.html" class="brand-logo">
+                        <img src="assets/images/logo/logo.png" alt="Brand Logo">
+                    </a>
+                </div>
+
+                <div class="d-none d-xl-flex flex-grow-1 justify-content-center">
+                    <nav class="main-nav">
+                        <ul class="main-menu text-capitalize d-flex flex-wrap align-items-center list-unstyled p-0 m-0">
+                            <li class="main-menu-list-item"><a href="index.html" class="main-menu-link ">Home</a>
+                            </li>
+                            <li class="main-menu-list-item"><a href="about-me.html" class="main-menu-link ">About Me</a>
+                            </li>
+                            <li class="main-menu-list-item"><a href="project.html" class="main-menu-link ">Portfolio</a>
+                            </li>
+                            <li class="main-menu-list-item"><a href="service.html" class="main-menu-link main-menu-active-link">service</a>
+                            </li>
+                            <li class="main-menu-list-item"><a href="blog-grid.html" class="main-menu-link ">Blog</a>
+                            </li>
+                            <li class="main-menu-list-item"><a href="contact.html" class="main-menu-link ">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="flex-shrink-1">
+                    <div class="d-flex flex-wrap align-items-center justify-content-end contact-btn-wrap">
+                        <a href="contact.html" class="btn btn-primary contact-btn d-none d-sm-inline-block">Let’s Talk
+                            <span class="contact-btn-icon">
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.90566 3.95808C3.88909 3.80893 4.02167 3.67634 4.1874 3.67634H11.1148C11.2806 3.67634 11.3966 3.79235 11.3966 3.95808V10.8855C11.3966 11.0512 11.264 11.1838 11.1148 11.1673L10.4685 11.1838C10.3028 11.1838 10.1702 11.0512 10.1868 10.9021L10.1702 5.74794L4.51885 11.3993C4.40284 11.5153 4.23712 11.5153 4.12111 11.3993L3.65707 10.9352C3.55763 10.8358 3.54106 10.6535 3.65707 10.5375L9.3084 4.88616H4.17083C4.02167 4.90273 3.88909 4.77015 3.88909 4.60442L3.90566 3.95808Z"
+                            fill="currentColor" />
+                    </svg>
+                </span>
+                        </a>
+                        <button class="border-0 menu-toggle-btn" id="offcanvas-toggle" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H20V2H0V0ZM5 7H20V9H5V7ZM20 14H0V16H20V14Z" fill="currentColor" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    </div>
+
+
+    <!-- offcanvas-menu start -->
+    <div id="offcanvas" class="offcanvas offcanvas-start bg-dark d-flex flex-column">
+        <!-- close button start -->
+
+        <div class="d-flex flex-wrap justify-content-between align-items-center offcanvas-header">
+            <a href="index.html">
+                <img src="assets/images/logo/offcanvas-logo.png" alt="">
+            </a>
+            <button id="offcanvas-close" class="offcanvas-close bg-primary border-0" data-bs-dismiss="offcanvas" aria-label="Close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2803 4.71967C19.5732 5.01256 19.5732 5.48744 19.2803 5.78033L5.78033 19.2803C5.48744 19.5732 5.01256 19.5732 4.71967 19.2803C4.42678 18.9874 4.42678 18.5126 4.71967 18.2197L18.2197 4.71967C18.5126 4.42678 18.9874 4.42678 19.2803 4.71967Z" fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.71967 4.71967C5.01256 4.42678 5.48744 4.42678 5.78033 4.71967L19.2803 18.2197C19.5732 18.5126 19.5732 18.9874 19.2803 19.2803C18.9874 19.5732 18.5126 19.5732 18.2197 19.2803L4.71967 5.78033C4.42678 5.48744 4.42678 5.01256 4.71967 4.71967Z" fill="white" />
+                </svg>
+            </button>
+        </div>
+        <!-- close button end -->
+
+        <div class="offcanvas-social-and-navmenu-wrap">
+
+            <!-- offcanvas-menu start -->
+            <nav class="offcanvas-nav d-flex flex-wrap flex-column justify-content-between">
+                <ul class="offcanvas-menu p-0 list-unstyled">
+                    <li class="offcanvas-menu-item">
+                        <a href="index.html" class="text-white fw-bold d-flex flex-wrap align-items-center justify-content-between offcanvas-menu-link">Home
+                            <span class="d-inline-block animate-arrow-up">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 17L17 7" stroke="currentColor" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+                <path d="M7 7H17V17" stroke="currentColor" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </span>
+                        </a>
+                    </li>
+                    <li class="offcanvas-menu-item">
+                        <a href="service.html" class="text-white fw-bold d-flex flex-wrap align-items-center justify-content-between offcanvas-menu-link">Services
+                            <span class="d-inline-block animate-arrow-up">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 17L17 7" stroke="currentColor" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+                <path d="M7 7H17V17" stroke="currentColor" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </span>
+                        </a>
+
+                    </li>
+                    <li class="offcanvas-menu-item">
+                        <a href="service-details.html" class="text-white fw-bold d-flex flex-wrap align-items-center justify-content-between offcanvas-menu-link">Services
+                            Details
+                            <span class="d-inline-block animate-arrow-up">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 17L17 7" stroke="currentColor" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+                <path d="M7 7H17V17" stroke="currentColor" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </span>
+                        </a>
+
+                    </li>
+                    <li class="offcanvas-menu-item">
+                        <a href="blog-grid.html" class="text-white fw-bold d-flex flex-wrap align-items-center justify-content-between offcanvas-menu-link">Blog
+                            <span class="d-inline-block animate-arrow-up">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 17L17 7" stroke="currentColor" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+                <path d="M7 7H17V17" stroke="currentColor" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </span>
+                        </a>
+                    </li>
+                    <li class="offcanvas-menu-item">
+                        <a href="blog-details.html" class="text-white fw-bold d-flex flex-wrap align-items-center justify-content-between offcanvas-menu-link">Blog
+                            Details
+                            <span class="d-inline-block animate-arrow-up">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 17L17 7" stroke="currentColor" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+                <path d="M7 7H17V17" stroke="currentColor" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </span>
+                        </a>
+                    </li>
+                    <li class="offcanvas-menu-item">
+                        <a href="project.html" class="text-white fw-bold d-flex flex-wrap align-items-center justify-content-between offcanvas-menu-link">Projects
+                            <span class="d-inline-block animate-arrow-up">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 17L17 7" stroke="currentColor" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+                <path d="M7 7H17V17" stroke="currentColor" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </span>
+                        </a>
+                    </li>
+                    <li class="offcanvas-menu-item">
+                        <a href="Project-details.html" class="text-white fw-bold d-flex flex-wrap align-items-center justify-content-between offcanvas-menu-link">Project
+                            Details
+                            <span class="d-inline-block animate-arrow-up">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 17L17 7" stroke="currentColor" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+                <path d="M7 7H17V17" stroke="currentColor" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </span>
+                        </a>
+                    </li>
+                    <li class="offcanvas-menu-item">
+                        <a href="about-me.html" class="text-white fw-bold d-flex flex-wrap align-items-center justify-content-between offcanvas-menu-link">About
+                            Me
+                            <span class="d-inline-block animate-arrow-up">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 17L17 7" stroke="currentColor" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+                <path d="M7 7H17V17" stroke="currentColor" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </span>
+                        </a>
+                    </li>
+
+                    <li class="offcanvas-menu-item">
+                        <a href="contact.html" class="text-white fw-bold d-flex flex-wrap align-items-center justify-content-between offcanvas-menu-link">Contact
+                            <span class="d-inline-block animate-arrow-up">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 17L17 7" stroke="currentColor" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+                <path d="M7 7H17V17" stroke="currentColor" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <nav class="py-10 mt-lg-auto">
+                <ul class="social-links d-flex flex-wrap list-unstyled">
+                    <li class="social-links-item"><a href="#" class="social-link">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.08398 7.9375H5.17969V13.625H2.64062V7.9375H0.558594V5.60156H2.64062V3.79883C2.64062 1.76758 3.85938 0.625 5.71289 0.625C6.60156 0.625 7.54102 0.802734 7.54102 0.802734V2.80859H6.5C5.48438 2.80859 5.17969 3.41797 5.17969 4.07812V5.60156H7.43945L7.08398 7.9375Z" fill="currentColor"></path>
+                            </svg>
+
+                        </a></li>
+                    <li class="social-links-item"><a href="#" class="social-link">
+                            <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.0918 2.60938C12.0918 2.73633 12.0918 2.83789 12.0918 2.96484C12.0918 6.49414 9.42578 10.5312 4.52539 10.5312C3.00195 10.5312 1.60547 10.0996 0.4375 9.33789C0.640625 9.36328 0.84375 9.38867 1.07227 9.38867C2.31641 9.38867 3.45898 8.95703 4.37305 8.24609C3.20508 8.2207 2.21484 7.45898 1.88477 6.39258C2.0625 6.41797 2.21484 6.44336 2.39258 6.44336C2.62109 6.44336 2.875 6.39258 3.07813 6.3418C1.85938 6.08789 0.945313 5.02148 0.945313 3.72656V3.70117C1.30078 3.9043 1.73242 4.00586 2.16406 4.03125C1.42773 3.54883 0.970704 2.73633 0.970704 1.82227C0.970704 1.31445 1.09766 0.857422 1.32617 0.476562C2.64648 2.07617 4.62695 3.14258 6.83594 3.26953C6.78516 3.06641 6.75977 2.86328 6.75977 2.66016C6.75977 1.1875 7.95313 -0.00585938 9.42578 -0.00585938C10.1875 -0.00585938 10.873 0.298828 11.3809 0.832031C11.9648 0.705078 12.5488 0.476562 13.0566 0.171875C12.8535 0.806641 12.4473 1.31445 11.8887 1.64453C12.4219 1.59375 12.9551 1.44141 13.4121 1.23828C13.0566 1.77148 12.5996 2.22852 12.0918 2.60938Z" fill="currentColor"></path>
+                            </svg>
+
+                        </a></li>
+                    <li class="social-links-item"><a href="#" class="social-link">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.35156 12.125H0.990234V4.5332H3.35156V12.125ZM2.1582 3.51758C1.42187 3.51758 0.8125 2.88281 0.8125 2.12109C0.8125 1.38477 1.42187 0.775391 2.1582 0.775391C2.91992 0.775391 3.5293 1.38477 3.5293 2.12109C3.5293 2.88281 2.91992 3.51758 2.1582 3.51758ZM12.1621 12.125H9.82617V8.44336C9.82617 7.55469 9.80078 6.4375 8.58203 6.4375C7.36328 6.4375 7.18555 7.37695 7.18555 8.36719V12.125H4.82422V4.5332H7.08398V5.57422H7.10937C7.43945 4.99023 8.20117 4.35547 9.34375 4.35547C11.7305 4.35547 12.1875 5.92969 12.1875 7.96094V12.125H12.1621Z" fill="currentColor"></path>
+                            </svg>
+
+                        </a></li>
+                    <li class="social-links-item"><a href="#" class="social-link">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.5 3.33008C8.09961 3.33008 9.41992 4.65039 9.41992 6.25C9.41992 7.875 8.09961 9.16992 6.5 9.16992C4.875 9.16992 3.58008 7.875 3.58008 6.25C3.58008 4.65039 4.875 3.33008 6.5 3.33008ZM6.5 8.1543C7.54102 8.1543 8.37891 7.31641 8.37891 6.25C8.37891 5.20898 7.54102 4.37109 6.5 4.37109C5.43359 4.37109 4.5957 5.20898 4.5957 6.25C4.5957 7.31641 5.45898 8.1543 6.5 8.1543ZM10.207 3.22852C10.207 3.60938 9.90234 3.91406 9.52148 3.91406C9.14062 3.91406 8.83594 3.60938 8.83594 3.22852C8.83594 2.84766 9.14062 2.54297 9.52148 2.54297C9.90234 2.54297 10.207 2.84766 10.207 3.22852ZM12.1367 3.91406C12.1875 4.85352 12.1875 7.67188 12.1367 8.61133C12.0859 9.52539 11.8828 10.3125 11.2227 10.998C10.5625 11.6582 9.75 11.8613 8.83594 11.9121C7.89648 11.9629 5.07812 11.9629 4.13867 11.9121C3.22461 11.8613 2.4375 11.6582 1.75195 10.998C1.0918 10.3125 0.888671 9.52539 0.83789 8.61133C0.787109 7.67188 0.787109 4.85352 0.83789 3.91406C0.888671 3 1.0918 2.1875 1.75195 1.52734C2.4375 0.867188 3.22461 0.664062 4.13867 0.613281C5.07812 0.5625 7.89648 0.5625 8.83594 0.613281C9.75 0.664062 10.5625 0.867188 11.2227 1.52734C11.8828 2.1875 12.0859 3 12.1367 3.91406ZM10.918 9.60156C11.2227 8.86523 11.1465 7.08789 11.1465 6.25C11.1465 5.4375 11.2227 3.66016 10.918 2.89844C10.7148 2.41602 10.334 2.00977 9.85156 1.83203C9.08984 1.52734 7.3125 1.60352 6.5 1.60352C5.66211 1.60352 3.88477 1.52734 3.14844 1.83203C2.64062 2.03516 2.25977 2.41602 2.05664 2.89844C1.75195 3.66016 1.82812 5.4375 1.82812 6.25C1.82812 7.08789 1.75195 8.86523 2.05664 9.60156C2.25977 10.1094 2.64062 10.4902 3.14844 10.6934C3.88477 10.998 5.66211 10.9219 6.5 10.9219C7.3125 10.9219 9.08984 10.998 9.85156 10.6934C10.334 10.4902 10.7402 10.1094 10.918 9.60156Z" fill="currentColor"></path>
+                            </svg>
+
+                        </a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </div>
+    <!-- offcanvas-menu end -->
+
+    <!-- Header end -->
+
+    <!-- Hero Banner section start -->
+    <section class="banner-section bg-dark position-relative">
+
+        <!-- line pattern start -->
+        <div class="line-pattern-light">
+            <span class="position-absolute line-verticle line-left"></span>
+            <span class="position-absolute line-verticle line-two"></span>
+            <span class="position-absolute line-verticle line-three"></span>
+            <span class="position-absolute line-verticle line-four"></span>
+            <span class="position-absolute line-verticle line-right"></span>
+        </div>
+        <!-- line pattern end -->
+
+        <img class="position-absolute hero-shape-top top-0 shape-width-400" src="assets/images/shapes/star-top.png" alt="Shapes">
+        <img class="position-absolute hero-shape-bottom bottom-0 shape-width-400" src="assets/images/shapes/star-top.png" alt="Shapes">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" data-aos="fade-up">
+                    <h2 class="banner-title text-center text-white fw-semibold ">Our Services</h2>
+                    <ul class="d-flex align-items-center justify-content-center list-unstyled bread-crumb">
+                        <li class="text-capitalize"><a href="index.html">Home</a></li>
+                        <li class="text-capitalize d-flex align-items-center justify-content-center"><span
+                            class="breadcrumb-hr-line d-inline-block"></span></li>
+                        <li class="text-capitalize text-primary">Services</li>
+                    </ul>
+                </div>
+
+                <div class="col-12" data-aos="fade-up" data-aos-delay="500">
+                    <div class="banner-card position-relative">
+                        <img src="assets/images/banner/banner1.png" alt="Banner Image">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Hero Banner section end -->
+
+
+    <!-- Service section start -->
+    <section class="about-us-two section-padding-bottom section-padding-top bg-white position-relative z-0">
+        <!-- line pattern start -->
+        <div class="line-pattern-dark">
+            <span class="position-absolute line-verticle line-left"></span>
+            <span class="position-absolute line-verticle line-two"></span>
+            <span class="position-absolute line-verticle line-three"></span>
+            <span class="position-absolute line-verticle line-four"></span>
+            <span class="position-absolute line-verticle line-right"></span>
+        </div>
+        <!-- line pattern end -->
+        <div class="container">
+            <div class="row mb-6 pb-6" data-aos="fade-up">
+                <div class="col-12 col-xl-6">
+                    <div class="sub-title d-flex align-items-center mb-8 mb-xl-0">
+                        <span>01</span> <span class="hr-span"></span> <span>Services</span>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6">
+                    <h3 class="title">
+                        <span class="d-sm-block">Providing Quality Services</span>
+                        For your Business
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row g-6">
+                <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card service-card-style-two position-relative">
+                        <img class="position-absolute top-0 end-0 service-shape" src="assets/images/shapes/star-shape-250.png" alt="shape">
+                        <img class="service-icon" src="assets/images/service-icon/pencile.png" alt="service icon">
+                        <h4 class="service-title text-dark fw-semibold">UX/UI & Product Design</h4>
+                        <p class="service-text">My approach is rooted in understanding user needs translating those insights into
+                            innovative, practical solutions
+                        </p>
+                        <a class="service-link fw-semibold" href="service-details.html">
+                            <span class="service-link-read-more-text">Read More</span>
+                            <span>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.79231 4.55465C4.77297 4.38064 4.92765 4.22596 5.121 4.22596H13.203C13.3964 4.22596 13.5317 4.3613 13.5317 4.55465V12.6367C13.5317 12.83 13.377 12.9847 13.203 12.9654L12.4489 12.9847C12.2556 12.9847 12.1009 12.83 12.1203 12.656L12.1009 6.64282L5.5077 13.236C5.37235 13.3714 5.179 13.3714 5.04366 13.236L4.50228 12.6947C4.38627 12.5787 4.36694 12.366 4.50228 12.2306L11.0955 5.63741H5.10166C4.92765 5.65674 4.77297 5.50206 4.77297 5.30871L4.79231 4.55465Z"
+                            fill="currentColor" />
+                    </svg>
+
+                </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card service-card-style-two position-relative">
+                        <img class="position-absolute top-0 end-0 service-shape" src="assets/images/shapes/star-shape-250.png" alt="shape">
+                        <img class="service-icon" src="assets/images/service-icon/settings.png" alt="service icon">
+                        <h4 class="service-title text-dark fw-semibold">Graphics Design & Branding</h4>
+                        <p class="service-text">My approach is rooted in understanding user needs translating those insights into
+                            innovative, practical solutions
+                        </p>
+                        <a class="service-link fw-semibold" href="service-details.html">
+                            <span class="service-link-read-more-text">Read More</span>
+                            <span>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.79231 4.55465C4.77297 4.38064 4.92765 4.22596 5.121 4.22596H13.203C13.3964 4.22596 13.5317 4.3613 13.5317 4.55465V12.6367C13.5317 12.83 13.377 12.9847 13.203 12.9654L12.4489 12.9847C12.2556 12.9847 12.1009 12.83 12.1203 12.656L12.1009 6.64282L5.5077 13.236C5.37235 13.3714 5.179 13.3714 5.04366 13.236L4.50228 12.6947C4.38627 12.5787 4.36694 12.366 4.50228 12.2306L11.0955 5.63741H5.10166C4.92765 5.65674 4.77297 5.50206 4.77297 5.30871L4.79231 4.55465Z"
+                            fill="currentColor" />
+                    </svg>
+
+                </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="700">
+                    <div class="service-card service-card-style-two position-relative">
+                        <img class="position-absolute top-0 end-0 service-shape" src="assets/images/shapes/star-shape-250.png" alt="shape">
+                        <img class="service-icon" src="assets/images/service-icon/code.png" alt="service icon">
+                        <h4 class="service-title text-dark fw-semibold">Web & Apps Development</h4>
+                        <p class="service-text">My approach is rooted in understanding user needs translating those insights into
+                            innovative, practical solutions
+                        </p>
+                        <a class="service-link fw-semibold" href="service-details.html">
+                            <span class="service-link-read-more-text">Read More</span>
+                            <span>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.79231 4.55465C4.77297 4.38064 4.92765 4.22596 5.121 4.22596H13.203C13.3964 4.22596 13.5317 4.3613 13.5317 4.55465V12.6367C13.5317 12.83 13.377 12.9847 13.203 12.9654L12.4489 12.9847C12.2556 12.9847 12.1009 12.83 12.1203 12.656L12.1009 6.64282L5.5077 13.236C5.37235 13.3714 5.179 13.3714 5.04366 13.236L4.50228 12.6947C4.38627 12.5787 4.36694 12.366 4.50228 12.2306L11.0955 5.63741H5.10166C4.92765 5.65674 4.77297 5.50206 4.77297 5.30871L4.79231 4.55465Z"
+                            fill="currentColor" />
+                    </svg>
+
+                </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card service-card-style-two position-relative">
+                        <img class="position-absolute top-0 end-0 service-shape" src="assets/images/shapes/star-shape-250.png" alt="shape">
+                        <img class="service-icon" src="assets/images/service-icon/notification.png" alt="service icon">
+                        <h4 class="service-title text-dark fw-semibold">SMM & SEO Optimizations</h4>
+                        <p class="service-text">My approach is rooted in understanding user needs translating those insights into
+                            innovative, practical solutions
+                        </p>
+                        <a class="service-link fw-semibold" href="service-details.html">
+                            <span class="service-link-read-more-text">Read More</span>
+                            <span>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.79231 4.55465C4.77297 4.38064 4.92765 4.22596 5.121 4.22596H13.203C13.3964 4.22596 13.5317 4.3613 13.5317 4.55465V12.6367C13.5317 12.83 13.377 12.9847 13.203 12.9654L12.4489 12.9847C12.2556 12.9847 12.1009 12.83 12.1203 12.656L12.1009 6.64282L5.5077 13.236C5.37235 13.3714 5.179 13.3714 5.04366 13.236L4.50228 12.6947C4.38627 12.5787 4.36694 12.366 4.50228 12.2306L11.0955 5.63741H5.10166C4.92765 5.65674 4.77297 5.50206 4.77297 5.30871L4.79231 4.55465Z"
+                            fill="currentColor" />
+                    </svg>
+
+                </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card service-card-style-two position-relative">
+                        <img class="position-absolute top-0 end-0 service-shape" src="assets/images/shapes/star-shape-250.png" alt="shape">
+                        <img class="service-icon" src="assets/images/service-icon/react.png" alt="service icon">
+                        <h4 class="service-title text-dark fw-semibold">Motion Design</h4>
+                        <p class="service-text">My approach is rooted in understanding user needs translating those insights into
+                            innovative, practical solutions
+                        </p>
+                        <a class="service-link fw-semibold" href="service-details.html">
+                            <span class="service-link-read-more-text">Read More</span>
+                            <span>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.79231 4.55465C4.77297 4.38064 4.92765 4.22596 5.121 4.22596H13.203C13.3964 4.22596 13.5317 4.3613 13.5317 4.55465V12.6367C13.5317 12.83 13.377 12.9847 13.203 12.9654L12.4489 12.9847C12.2556 12.9847 12.1009 12.83 12.1203 12.656L12.1009 6.64282L5.5077 13.236C5.37235 13.3714 5.179 13.3714 5.04366 13.236L4.50228 12.6947C4.38627 12.5787 4.36694 12.366 4.50228 12.2306L11.0955 5.63741H5.10166C4.92765 5.65674 4.77297 5.50206 4.77297 5.30871L4.79231 4.55465Z"
+                            fill="currentColor" />
+                    </svg>
+
+                </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="700">
+                    <div class="service-card service-card-style-two position-relative">
+                        <img class="position-absolute top-0 end-0 service-shape" src="assets/images/shapes/star-shape-250.png" alt="shape">
+                        <img class="service-icon" src="assets/images/service-icon/board.png" alt="service icon">
+                        <h4 class="service-title text-dark fw-semibold">IT Consulting</h4>
+                        <p class="service-text">My approach is rooted in understanding user needs translating those insights into
+                            innovative, practical solutions
+                        </p>
+                        <a class="service-link fw-semibold" href="service-details.html">
+                            <span class="service-link-read-more-text">Read More</span>
+                            <span>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.79231 4.55465C4.77297 4.38064 4.92765 4.22596 5.121 4.22596H13.203C13.3964 4.22596 13.5317 4.3613 13.5317 4.55465V12.6367C13.5317 12.83 13.377 12.9847 13.203 12.9654L12.4489 12.9847C12.2556 12.9847 12.1009 12.83 12.1203 12.656L12.1009 6.64282L5.5077 13.236C5.37235 13.3714 5.179 13.3714 5.04366 13.236L4.50228 12.6947C4.38627 12.5787 4.36694 12.366 4.50228 12.2306L11.0955 5.63741H5.10166C4.92765 5.65674 4.77297 5.50206 4.77297 5.30871L4.79231 4.55465Z"
+                            fill="currentColor" />
+                    </svg>
+
+                </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service section End -->
+
+    <!-- Faq section start -->
+    <section class="faq-section section-padding-bottom section-padding-top bg-light position-relative z-1">
+        <!-- line pattern start -->
+        <div class="line-pattern-dark">
+            <span class="position-absolute line-verticle line-left"></span>
+            <span class="position-absolute line-verticle line-two"></span>
+            <span class="position-absolute line-verticle line-three"></span>
+            <span class="position-absolute line-verticle line-four"></span>
+            <span class="position-absolute line-verticle line-right"></span>
+        </div>
+        <!-- line pattern end -->
+        <img class="position-absolute testimonial-shape-top top-0 shape-width-400" src="assets/images/shapes/star-light-top.png" alt="Shapes">
+        <img class="position-absolute testimonial-shape-bottom bottom-0 shape-width-400" src="assets/images/shapes/star-light-bottom.png" alt="Shapes">
+        <div class="container">
+            <div class="row pb-10 mb-lg-10" data-aos="fade-up">
+                <div class="col-12 col-xl-5">
+                    <div class="sub-title d-flex align-items-center text-dark mb-8 mb-xl-0">
+                        <span>02</span> <span class="hr-span bg-dark"></span> <span>FAQs</span>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-7">
+                    <h3 class="title text-dark ps-xl-10">
+                        Have Any Question On Minds
+                        <span class="text-dark">Frequently Asked Questions</span>
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-12 col-lg-6" data-aos="fade-up">
+                    <div class="testimonial-person-card mb-10 mb-lg-0 pb-5 pb-lg-0">
+                        <div class="person-image-card text-center primary-card mx-auto">
+                            <img class="mx-auto" src="assets/images/person/person2.png" alt="Person Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 order-lg-first" data-aos="fade-up" data-aos-delay="400">
+                    <div class="accordion-style-one">
+                        <div class="accordion" id="accordionExampleStyleOne">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What services do you offer as a web designer?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExampleStyleOne">
+                                    <div class="accordion-body">
+                                        <p>our fintech software uses advanced encryption protocols, multi-factor
+                                            authentication, and regular security updates to protect your unauthorized
+                                            access and cyber threats prioritize</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        How long does it take to design and develop a website?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleStyleOne">
+                                    <div class="accordion-body">
+                                        <p>our fintech software uses advanced encryption protocols, multi-factor
+                                            authentication, and regular security updates to protect your unauthorized
+                                            access and cyber threats prioritize</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        What is the cost of a website design?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExampleStyleOne">
+                                    <div class="accordion-body">
+                                        <p>our fintech software uses advanced encryption protocols, multi-factor
+                                            authentication, and regular security updates to protect your unauthorized
+                                            access and cyber threats prioritize</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Do you offer website maintenance and updates?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExampleStyleOne">
+                                    <div class="accordion-body">
+                                        <p>our fintech software uses advanced encryption protocols, multi-factor
+                                            authentication, and regular security updates to protect your unauthorized
+                                            access and cyber threats prioritize</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Can you redesign my existing website?
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExampleStyleOne">
+                                    <div class="accordion-body">
+                                        <p>our fintech software uses advanced encryption protocols, multi-factor
+                                            authentication, and regular security updates to protect your unauthorized
+                                            access and cyber threats prioritize</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        How do you ensure my website is SEO-friendly?
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExampleStyleOne">
+                                    <div class="accordion-body">
+                                        <p>our fintech software uses advanced encryption protocols, multi-factor
+                                            authentication, and regular security updates to protect your unauthorized
+                                            access and cyber threats prioritize</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Faq section End -->
+
+
+    <!-- Cta section start -->
+    <section class="cta-section section-padding-top section-padding-bottom bg-white position-relative z-1">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="row" data-aos="zoom-in">
+                        <div class="col-12 text-center">
+                            <span class="cta-sub-title text-secondary fw-medium">Have Any Project On Minds!</span>
+                            <h3 class="cta-title">
+                                Let’s Work
+                                <span>Together</span>
+                            </h3>
+
+                            <div class="d-flex cta-btn-group justify-content-center align-items-center">
+                                <a href="contact.html" class="btn btn-primary">
+                                    Get Started
+                                    <span class="contact-btn-icon">
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.90566 3.95808C3.88909 3.80893 4.02167 3.67634 4.1874 3.67634H11.1148C11.2806 3.67634 11.3966 3.79235 11.3966 3.95808V10.8855C11.3966 11.0512 11.264 11.1838 11.1148 11.1673L10.4685 11.1838C10.3028 11.1838 10.1702 11.0512 10.1868 10.9021L10.1702 5.74794L4.51885 11.3993C4.40284 11.5153 4.23712 11.5153 4.12111 11.3993L3.65707 10.9352C3.55763 10.8358 3.54106 10.6535 3.65707 10.5375L9.3084 4.88616H4.17083C4.02167 4.90273 3.88909 4.77015 3.88909 4.60442L3.90566 3.95808Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </span>
+                                </a>
+                                <a href="contact.html" class="btn btn-secondary-outline">
+                                    Contact Us
+                                    <span class="contact-btn-icon">
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.90566 3.95808C3.88909 3.80893 4.02167 3.67634 4.1874 3.67634H11.1148C11.2806 3.67634 11.3966 3.79235 11.3966 3.95808V10.8855C11.3966 11.0512 11.264 11.1838 11.1148 11.1673L10.4685 11.1838C10.3028 11.1838 10.1702 11.0512 10.1868 10.9021L10.1702 5.74794L4.51885 11.3993C4.40284 11.5153 4.23712 11.5153 4.12111 11.3993L3.65707 10.9352C3.55763 10.8358 3.54106 10.6535 3.65707 10.5375L9.3084 4.88616H4.17083C4.02167 4.90273 3.88909 4.77015 3.88909 4.60442L3.90566 3.95808Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <img class="position-absolute blog-shape-top top-0 shape-width-400" src="assets/images/shapes/star-light-top.png" alt="Shapes">
+        <img class="position-absolute blog-shape-bottom bottom-0 shape-width-400" src="assets/images/shapes/star-light-bottom.png" alt="Shapes">
+    </section>
+    <!-- Cta section End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-dark">
+        <div class="overflow-hidden">
+            <div data-aos="zoom-in">
+                <div class="footer position-relative z-1">
+                    <!-- line pattern start -->
+                    <div class="line-pattern-light">
+                        <span class="position-absolute line-verticle line-left"></span>
+                        <span class="position-absolute line-verticle line-two"></span>
+                        <span class="position-absolute line-verticle line-three"></span>
+                        <span class="position-absolute line-verticle line-four"></span>
+                        <span class="position-absolute line-verticle line-right"></span>
+                    </div>
+                    <!-- line pattern end -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-3 col-xl-2">
+                                <div class="row flex-lg-column">
+                                    <a class="col-12 col-sm-6 col-md-7 col-lg-12" href="index.html"><img src="assets/images/logo/logo.png" alt="Logo"></a>
+                                    <div class="footer-widget-list d-xl-none col-12 col-sm-6 col-md-5 col-lg-12 mt-6 mb-8 mt-sm-0 mt-lg-8">
+                                        <div class="footer-widget-list-item">
+                                            <p>Social Media</p>
+                                            <ul class="social-links d-flex flex-wrap list-unstyled">
+                                                <li class="social-links-item"><a href="#" class="social-link">
+                                                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M7.08398 7.9375H5.17969V13.625H2.64062V7.9375H0.558594V5.60156H2.64062V3.79883C2.64062 1.76758 3.85938 0.625 5.71289 0.625C6.60156 0.625 7.54102 0.802734 7.54102 0.802734V2.80859H6.5C5.48438 2.80859 5.17969 3.41797 5.17969 4.07812V5.60156H7.43945L7.08398 7.9375Z" fill="currentColor" />
+                                                        </svg>
+
+                                                    </a></li>
+                                                <li class="social-links-item"><a href="#" class="social-link">
+                                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12.0918 2.60938C12.0918 2.73633 12.0918 2.83789 12.0918 2.96484C12.0918 6.49414 9.42578 10.5312 4.52539 10.5312C3.00195 10.5312 1.60547 10.0996 0.4375 9.33789C0.640625 9.36328 0.84375 9.38867 1.07227 9.38867C2.31641 9.38867 3.45898 8.95703 4.37305 8.24609C3.20508 8.2207 2.21484 7.45898 1.88477 6.39258C2.0625 6.41797 2.21484 6.44336 2.39258 6.44336C2.62109 6.44336 2.875 6.39258 3.07813 6.3418C1.85938 6.08789 0.945313 5.02148 0.945313 3.72656V3.70117C1.30078 3.9043 1.73242 4.00586 2.16406 4.03125C1.42773 3.54883 0.970704 2.73633 0.970704 1.82227C0.970704 1.31445 1.09766 0.857422 1.32617 0.476562C2.64648 2.07617 4.62695 3.14258 6.83594 3.26953C6.78516 3.06641 6.75977 2.86328 6.75977 2.66016C6.75977 1.1875 7.95313 -0.00585938 9.42578 -0.00585938C10.1875 -0.00585938 10.873 0.298828 11.3809 0.832031C11.9648 0.705078 12.5488 0.476562 13.0566 0.171875C12.8535 0.806641 12.4473 1.31445 11.8887 1.64453C12.4219 1.59375 12.9551 1.44141 13.4121 1.23828C13.0566 1.77148 12.5996 2.22852 12.0918 2.60938Z" fill="currentColor" />
+                                                        </svg>
+
+                                                    </a></li>
+                                                <li class="social-links-item"><a href="#" class="social-link">
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3.35156 12.125H0.990234V4.5332H3.35156V12.125ZM2.1582 3.51758C1.42187 3.51758 0.8125 2.88281 0.8125 2.12109C0.8125 1.38477 1.42187 0.775391 2.1582 0.775391C2.91992 0.775391 3.5293 1.38477 3.5293 2.12109C3.5293 2.88281 2.91992 3.51758 2.1582 3.51758ZM12.1621 12.125H9.82617V8.44336C9.82617 7.55469 9.80078 6.4375 8.58203 6.4375C7.36328 6.4375 7.18555 7.37695 7.18555 8.36719V12.125H4.82422V4.5332H7.08398V5.57422H7.10937C7.43945 4.99023 8.20117 4.35547 9.34375 4.35547C11.7305 4.35547 12.1875 5.92969 12.1875 7.96094V12.125H12.1621Z" fill="currentColor" />
+                                                        </svg>
+
+                                                    </a></li>
+                                                <li class="social-links-item"><a href="#" class="social-link">
+                                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M6.5 3.33008C8.09961 3.33008 9.41992 4.65039 9.41992 6.25C9.41992 7.875 8.09961 9.16992 6.5 9.16992C4.875 9.16992 3.58008 7.875 3.58008 6.25C3.58008 4.65039 4.875 3.33008 6.5 3.33008ZM6.5 8.1543C7.54102 8.1543 8.37891 7.31641 8.37891 6.25C8.37891 5.20898 7.54102 4.37109 6.5 4.37109C5.43359 4.37109 4.5957 5.20898 4.5957 6.25C4.5957 7.31641 5.45898 8.1543 6.5 8.1543ZM10.207 3.22852C10.207 3.60938 9.90234 3.91406 9.52148 3.91406C9.14062 3.91406 8.83594 3.60938 8.83594 3.22852C8.83594 2.84766 9.14062 2.54297 9.52148 2.54297C9.90234 2.54297 10.207 2.84766 10.207 3.22852ZM12.1367 3.91406C12.1875 4.85352 12.1875 7.67188 12.1367 8.61133C12.0859 9.52539 11.8828 10.3125 11.2227 10.998C10.5625 11.6582 9.75 11.8613 8.83594 11.9121C7.89648 11.9629 5.07812 11.9629 4.13867 11.9121C3.22461 11.8613 2.4375 11.6582 1.75195 10.998C1.0918 10.3125 0.888671 9.52539 0.83789 8.61133C0.787109 7.67188 0.787109 4.85352 0.83789 3.91406C0.888671 3 1.0918 2.1875 1.75195 1.52734C2.4375 0.867188 3.22461 0.664062 4.13867 0.613281C5.07812 0.5625 7.89648 0.5625 8.83594 0.613281C9.75 0.664062 10.5625 0.867188 11.2227 1.52734C11.8828 2.1875 12.0859 3 12.1367 3.91406ZM10.918 9.60156C11.2227 8.86523 11.1465 7.08789 11.1465 6.25C11.1465 5.4375 11.2227 3.66016 10.918 2.89844C10.7148 2.41602 10.334 2.00977 9.85156 1.83203C9.08984 1.52734 7.3125 1.60352 6.5 1.60352C5.66211 1.60352 3.88477 1.52734 3.14844 1.83203C2.64062 2.03516 2.25977 2.41602 2.05664 2.89844C1.75195 3.66016 1.82812 5.4375 1.82812 6.25C1.82812 7.08789 1.75195 8.86523 2.05664 9.60156C2.25977 10.1094 2.64062 10.4902 3.14844 10.6934C3.88477 10.998 5.66211 10.9219 6.5 10.9219C7.3125 10.9219 9.08984 10.998 9.85156 10.6934C10.334 10.4902 10.7402 10.1094 10.918 9.60156Z" fill="currentColor" />
+                                                        </svg>
+
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-7 col-lg-5 col-xl-4">
+                                <div class="footer-widget">
+                                    <div class="footer-widget-list">
+                                        <div class="footer-widget-list-item">
+                                            <p>Location</p>
+                                            <h3 class="footer-title">352 Thatcher Road St, Mahattan,<br /> NY 10463, US</h3>
+                                        </div>
+                                        <div class="footer-widget-list-item">
+                                            <p>Get In Touch</p>
+                                            <a class="text-white footer-widget-link" href="mailto:support@gmail.com">support@gmail.com</a>
+                                            <a class="text-white footer-widget-link" href="tel:+00012345688">+000 (123) 456
+                                                88</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-4">
+                                <div class="footer-widget">
+                                    <div class="footer-widget-list">
+                                        <div class="footer-widget-list-item">
+                                            <p>Newsletter</p>
+                                            <h3 class="footer-title">Subscribe our newsletter <br />
+                                        to get more updates</h3>
+                                        </div>
+                                        <div class="footer-widget-list-item">
+                                            <form class="news-letter">
+                                                <div class="position-relative">
+                                                    <span class="position-absolute form-email-icon">
+                                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M13.5078 5.26172C13.8086 5.50781 14 5.86328 14 6.27344V13.4375C14 14.1758 13.3984 14.75 12.6875 14.75H1.3125C0.574219 14.75 0 14.1758 0 13.4375V6.27344C0 5.86328 0.164062 5.50781 0.464844 5.26172C0.574219 5.17969 3.5 2.82812 4.15625 2.28125C4.78516 1.78906 5.79688 0.75 7 0.75C8.17578 0.75 9.21484 1.81641 9.81641 2.28125C10.4453 2.80078 13.3711 5.15234 13.5078 5.26172ZM12.6875 13.2734V6.35547C12.6875 6.30078 12.6602 6.24609 12.6055 6.21875C12.168 5.86328 9.625 3.83984 8.99609 3.32031C8.50391 2.9375 7.62891 2.0625 7 2.0625C6.34375 2.0625 5.46875 2.91016 4.97656 3.32031C4.34766 3.83984 1.80469 5.86328 1.36719 6.21875C1.3125 6.24609 1.3125 6.30078 1.3125 6.35547V13.2734C1.3125 13.3828 1.36719 13.4375 1.47656 13.4375H12.5234C12.6055 13.4375 12.6875 13.3828 12.6875 13.2734ZM11.8125 8.16016C11.9219 8.29688 11.8945 8.51562 11.7578 8.625C10.9648 9.25391 10.1172 9.91016 9.81641 10.1836C9.1875 10.6758 8.17578 11.6875 7 11.6875C5.79688 11.6875 4.75781 10.6484 4.15625 10.1836C3.85547 9.9375 3.00781 9.25391 2.21484 8.625C2.07812 8.51562 2.05078 8.29688 2.16016 8.16016L2.59766 7.64062C2.70703 7.50391 2.89844 7.47656 3.0625 7.61328C3.82812 8.24219 4.64844 8.89844 4.97656 9.14453C5.46875 9.52734 6.34375 10.375 7 10.375C7.62891 10.375 8.50391 9.55469 8.99609 9.14453C9.32422 8.89844 10.1445 8.24219 10.9102 7.61328C11.0742 7.47656 11.2656 7.50391 11.375 7.64062L11.8125 8.16016Z"
+                                                        fill="currentColor" />
+                                                </svg>
+
+                                            </span>
+                                                    <input type="text" class="form-control" placeholder="Email Address">
+                                                </div>
+                                                <button type="submit" class="btn btn-primary contact-btn">Subscribe
+                                                    <span class="contact-btn-icon">
+                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M3.90566 3.95808C3.88909 3.80893 4.02167 3.67634 4.1874 3.67634H11.1148C11.2806 3.67634 11.3966 3.79235 11.3966 3.95808V10.8855C11.3966 11.0512 11.264 11.1838 11.1148 11.1673L10.4685 11.1838C10.3028 11.1838 10.1702 11.0512 10.1868 10.9021L10.1702 5.74794L4.51885 11.3993C4.40284 11.5153 4.23712 11.5153 4.12111 11.3993L3.65707 10.9352C3.55763 10.8358 3.54106 10.6535 3.65707 10.5375L9.3084 4.88616H4.17083C4.02167 4.90273 3.88909 4.77015 3.88909 4.60442L3.90566 3.95808Z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col col-md-6 d-none d-xl-block col-xl-2">
+                                <div class="footer-widget px-0">
+                                    <div class="footer-widget-list">
+                                        <div class="footer-widget-list-item">
+                                            <p>Social Media</p>
+                                            <ul class="social-links d-flex flex-wrap list-unstyled">
+                                                <li class="social-links-item"><a href="#" class="social-link">
+                                                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M7.08398 7.9375H5.17969V13.625H2.64062V7.9375H0.558594V5.60156H2.64062V3.79883C2.64062 1.76758 3.85938 0.625 5.71289 0.625C6.60156 0.625 7.54102 0.802734 7.54102 0.802734V2.80859H6.5C5.48438 2.80859 5.17969 3.41797 5.17969 4.07812V5.60156H7.43945L7.08398 7.9375Z" fill="currentColor" />
+                                                        </svg>
+
+                                                    </a></li>
+                                                <li class="social-links-item"><a href="#" class="social-link">
+                                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12.0918 2.60938C12.0918 2.73633 12.0918 2.83789 12.0918 2.96484C12.0918 6.49414 9.42578 10.5312 4.52539 10.5312C3.00195 10.5312 1.60547 10.0996 0.4375 9.33789C0.640625 9.36328 0.84375 9.38867 1.07227 9.38867C2.31641 9.38867 3.45898 8.95703 4.37305 8.24609C3.20508 8.2207 2.21484 7.45898 1.88477 6.39258C2.0625 6.41797 2.21484 6.44336 2.39258 6.44336C2.62109 6.44336 2.875 6.39258 3.07813 6.3418C1.85938 6.08789 0.945313 5.02148 0.945313 3.72656V3.70117C1.30078 3.9043 1.73242 4.00586 2.16406 4.03125C1.42773 3.54883 0.970704 2.73633 0.970704 1.82227C0.970704 1.31445 1.09766 0.857422 1.32617 0.476562C2.64648 2.07617 4.62695 3.14258 6.83594 3.26953C6.78516 3.06641 6.75977 2.86328 6.75977 2.66016C6.75977 1.1875 7.95313 -0.00585938 9.42578 -0.00585938C10.1875 -0.00585938 10.873 0.298828 11.3809 0.832031C11.9648 0.705078 12.5488 0.476562 13.0566 0.171875C12.8535 0.806641 12.4473 1.31445 11.8887 1.64453C12.4219 1.59375 12.9551 1.44141 13.4121 1.23828C13.0566 1.77148 12.5996 2.22852 12.0918 2.60938Z" fill="currentColor" />
+                                                        </svg>
+
+                                                    </a></li>
+                                                <li class="social-links-item"><a href="#" class="social-link">
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M3.35156 12.125H0.990234V4.5332H3.35156V12.125ZM2.1582 3.51758C1.42187 3.51758 0.8125 2.88281 0.8125 2.12109C0.8125 1.38477 1.42187 0.775391 2.1582 0.775391C2.91992 0.775391 3.5293 1.38477 3.5293 2.12109C3.5293 2.88281 2.91992 3.51758 2.1582 3.51758ZM12.1621 12.125H9.82617V8.44336C9.82617 7.55469 9.80078 6.4375 8.58203 6.4375C7.36328 6.4375 7.18555 7.37695 7.18555 8.36719V12.125H4.82422V4.5332H7.08398V5.57422H7.10937C7.43945 4.99023 8.20117 4.35547 9.34375 4.35547C11.7305 4.35547 12.1875 5.92969 12.1875 7.96094V12.125H12.1621Z" fill="currentColor" />
+                                                        </svg>
+
+                                                    </a></li>
+                                                <li class="social-links-item"><a href="#" class="social-link">
+                                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M6.5 3.33008C8.09961 3.33008 9.41992 4.65039 9.41992 6.25C9.41992 7.875 8.09961 9.16992 6.5 9.16992C4.875 9.16992 3.58008 7.875 3.58008 6.25C3.58008 4.65039 4.875 3.33008 6.5 3.33008ZM6.5 8.1543C7.54102 8.1543 8.37891 7.31641 8.37891 6.25C8.37891 5.20898 7.54102 4.37109 6.5 4.37109C5.43359 4.37109 4.5957 5.20898 4.5957 6.25C4.5957 7.31641 5.45898 8.1543 6.5 8.1543ZM10.207 3.22852C10.207 3.60938 9.90234 3.91406 9.52148 3.91406C9.14062 3.91406 8.83594 3.60938 8.83594 3.22852C8.83594 2.84766 9.14062 2.54297 9.52148 2.54297C9.90234 2.54297 10.207 2.84766 10.207 3.22852ZM12.1367 3.91406C12.1875 4.85352 12.1875 7.67188 12.1367 8.61133C12.0859 9.52539 11.8828 10.3125 11.2227 10.998C10.5625 11.6582 9.75 11.8613 8.83594 11.9121C7.89648 11.9629 5.07812 11.9629 4.13867 11.9121C3.22461 11.8613 2.4375 11.6582 1.75195 10.998C1.0918 10.3125 0.888671 9.52539 0.83789 8.61133C0.787109 7.67188 0.787109 4.85352 0.83789 3.91406C0.888671 3 1.0918 2.1875 1.75195 1.52734C2.4375 0.867188 3.22461 0.664062 4.13867 0.613281C5.07812 0.5625 7.89648 0.5625 8.83594 0.613281C9.75 0.664062 10.5625 0.867188 11.2227 1.52734C11.8828 2.1875 12.0859 3 12.1367 3.91406ZM10.918 9.60156C11.2227 8.86523 11.1465 7.08789 11.1465 6.25C11.1465 5.4375 11.2227 3.66016 10.918 2.89844C10.7148 2.41602 10.334 2.00977 9.85156 1.83203C9.08984 1.52734 7.3125 1.60352 6.5 1.60352C5.66211 1.60352 3.88477 1.52734 3.14844 1.83203C2.64062 2.03516 2.25977 2.41602 2.05664 2.89844C1.75195 3.66016 1.82812 5.4375 1.82812 6.25C1.82812 7.08789 1.75195 8.86523 2.05664 9.60156C2.25977 10.1094 2.64062 10.4902 3.14844 10.6934C3.88477 10.998 5.66211 10.9219 6.5 10.9219C7.3125 10.9219 9.08984 10.998 9.85156 10.6934C10.334 10.4902 10.7402 10.1094 10.918 9.60156Z" fill="currentColor" />
+                                                        </svg>
+
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="coppyright">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="footer-links d-flex align-items-center justify-content-center justify-content-md-end list-unstyled">
+                                    <li class="footer-links-item"><a href="#" class="footer-link">Home</a></li>
+                                    <li class="footer-links-item"><a href="#" class="footer-link">About</a></li>
+                                    <li class="footer-links-item"><a href="#" class="footer-link"> Privacy Policy</a></li>
+                                    <li class="footer-links-item"><a href="#" class="footer-link">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 order-md-first mt-2 mt-md-0">
+                                <p class="text-center text-md-start">© 2024 <a class="text-primary" href="#">Rexon</a> - All
+                                    rights
+                                    reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a id="scrollUp" href="#" class="scroll-up">
+            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.335938 8.46094C0.160156 8.32031 0.160156 8.03906 0.335938 7.86328L7.68359 0.515625C7.85938 0.339844 8.10547 0.339844 8.28125 0.515625L15.6289 7.86328C15.8047 8.03906 15.8047 8.32031 15.6289 8.46094L14.9609 9.16406C14.7852 9.33984 14.5039 9.33984 14.3633 9.16406L8.91406 3.71484V15.7031C8.91406 15.9492 8.70312 16.125 8.49219 16.125H7.50781C7.26172 16.125 7.08594 15.9492 7.08594 15.7031V3.71484L1.60156 9.16406C1.46094 9.33984 1.17969 9.33984 1.00391 9.16406L0.335938 8.46094Z" fill="currentColor" />
+            </svg>
+
+        </a>
+    </footer>
+    <!-- Footer End -->
+
+
+
+    <!-- JS Vendor, Plugins & Activation Script Files -->
+
+    <!-- Vendors JS -->
+    <script src="assets/js/vendor/modernizr-3.11.7.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/c957824f46.js" crossorigin="anonymous"></script>
+
+    <!-- Plugins JS -->
+    <script src="assets/js/plugins/aos.js">
+    </script>
+    <script src="assets/js/plugins/swiper-bundle.min.js">
+    </script>
+    <script src="assets/js/plugins/jquery.waypoints.js">
+    </script>
+    <script src="assets/js/plugins/jquery.counterup.min.js">
+    </script>
+
+    <!-- Activation JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+.about-us-one {
+    background-color: $light;
+    padding-top: 80px;
+
+    @media #{$laptop-device,$big-device} {
+        padding-top: 230px;
+
+    }
+
+    @media #{$tablet-device,$desktop-device} {
+        padding-top: 100px;
+
+    }
+
+
+}
+
+
+.fun-fact-card {
+    margin-top: 80px;
+    padding: 30px 30px;
+
+    @media #{$laptop-device,$big-device} {
+        margin-top: 110px;
+        padding: 80px 100px;
+
+    }
+
+    @media #{$tablet-device,$desktop-device} {
+        padding: 50px 50px;
+
+    }
+
+
+
+    background-color: $white;
+    border-radius: 10px;
+    border: 1px solid rgba($color: $dark, $alpha: 10%);
+
+
+}
+
+.funfact-lists {
+    // gap: 30px;
+    li {
+        position: relative;
+        gap: 30px;
+    }
+}
+
+
+
+.fact-counter {
+    font-family: $Outfit;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 50px;
+    color: $dark;
+
+    @media #{$big-device} {
+        font-size: 85px;
+
+    }
+
+    @media #{$laptop-device} {
+        font-size: 70px;
+
+    }
+
+    @media #{$desktop-device} {
+        font-size: 60px;
+
+    }
+
+    @media #{$tablet-device} {
+        font-size: 45px;
+
+    }
+
+
+}
+
+
+.fact-counter-text {
+    font-weight: 500;
+    font-size: 18px;
+    color: $secondary;
+    @media #{$tablet-device} {
+        font-size: 16px;
+
+    }
+}
+
+// video card
+
+.video-card {
+    img {
+        border-radius: 15px;
+    }
+}
+
+.video-play-btn {
+    width: 100px;
+    height: 100px;
+
+    @media #{$large-mobile} {
+        width: 60px;
+        height: 60px;
+
+    }
+
+    background-color: $white;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// about section two
+
+.about-us-two {
+    background-color: $light;
+    padding-top: 140px;
+
+    @media #{$big-device} {
+        padding-top: 340px;
+
+    }
+
+    @media #{$laptop-device} {
+        padding-top: 310px;
+
+    }
+
+    @media #{$desktop-device} {
+        padding-top: 240px;
+
+    }
+
+    @media #{$tablet-device} {
+        padding-top: 190px;
+
+    }
+}
+
+
+.blog-details-section.about-us-two {
+    background-color: $light;
+    padding-top: 140px;
+
+    @media #{$big-device} {
+        padding-top: 280px;
+
+    }
+
+    @media #{$laptop-device} {
+        padding-top: 250px;
+
+    }
+
+    @media #{$desktop-device} {
+        padding-top: 220px;
+
+    }
+
+    @media #{$tablet-device} {
+        padding-top: 170px;
+
+    }
+
+
+}
+
+
+.service-details-section.about-us-two {
+    background-color: $light;
+    padding-top: 120px;
+
+    @media #{$big-device} {
+        padding-top: 300px;
+
+    }
+
+    @media #{$laptop-device} {
+        padding-top: 270px;
+
+    }
+
+    @media #{$desktop-device} {
+        padding-top: 240px;
+
+    }
+
+    @media #{$tablet-device} {
+        padding-top: 195px;
+
+    }
+
+
+}
+
+.project-details-section.about-us-two {
+    background-color: $light;
+    padding-top: 120px;
+
+    @media #{$big-device} {
+        padding-top: 300px;
+
+    }
+
+    @media #{$laptop-device} {
+        padding-top: 270px;
+
+    }
+
+    @media #{$desktop-device} {
+        padding-top: 240px;
+
+    }
+
+    @media #{$tablet-device} {
+        padding-top: 185px;
+
+    }
+
+
+}

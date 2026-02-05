@@ -1,0 +1,125 @@
+.contact-title {
+    font-size: 30px;
+}
+
+
+.address-lists {
+    margin-top: 50px;
+
+    @media #{$large-mobile,$tablet-device} {
+        margin-bottom: 50px;
+    }
+
+    gap: 50px;
+
+    @media #{$large-mobile} {
+        gap: 30px;
+    }
+}
+
+.address-list-item {
+    gap: 40px;
+
+    @media #{$tablet-device} {
+        gap: 20px;
+    }
+
+    @media #{$large-mobile} {
+        gap: 20px;
+    }
+
+    @media #{$small-mobile} {
+        gap: 15px;
+    }
+
+}
+
+
+.address-list-content {
+    gap: 10px;
+}
+
+.address-list-title {
+    font-size: 24px;
+
+    @media #{$large-mobile} {
+        font-size: 20px;
+    }
+}
+
+
+.contact-form {
+    .form-control {
+        font-family: $Outfit;
+        font-weight: normal;
+        font-size: 16px;
+        border: 1px solid $dark;
+        background-color: $light;
+        color: $dark;
+        padding: 10px 20px;
+        border-radius: 7px;
+
+        &::placeholder {
+            color: $dark;
+        }
+    }
+
+    textarea {
+        &.form-control {
+            min-height: 120px;
+            max-height: 120px;
+        }
+    }
+
+    .form-check {
+        display: flex;
+        margin-bottom: 0;
+        align-items: center;
+
+        @media #{$large-mobile} {
+            align-items: start;
+        }
+
+        gap: 15px;
+    }
+
+    .form-check-label {
+        margin-bottom: -5px;
+    }
+
+    .form-check-input {
+        position: relative;
+        width: 25px;
+        height: 25px;
+        border: 2px solid $dark;
+        border-radius: 50%;
+    }
+}
+
+.map-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    @media #{$large-mobile} {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+.form-check-input:checked[type="checkbox"] {
+
+    background-image: none;
+}
+
+.form-check-input:checked[type="checkbox"]::after {
+    background-color: $dark;
+    display: block;
+    width: 5px;
+    height: 5px;
+    content: '';
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

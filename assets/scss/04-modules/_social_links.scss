@@ -1,0 +1,22 @@
+.social-links {
+    gap: 10px;
+}
+
+.social-link {
+    color: $secondary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border: 1.2px solid rgba($color: $dark, $alpha: 10%);
+    border-radius: 50%;
+    background-color: $white;
+    transition: $transition-base;
+
+    &:hover {
+        background-color: $primary;
+        color: $dark;
+        border-color: $primary;
+    }
+}

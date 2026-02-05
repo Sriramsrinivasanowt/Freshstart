@@ -1,0 +1,46 @@
+.cta-section {
+    z-index: 1;
+}
+
+.cta-sub-title {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.cta-title {
+    font-weight: 200;
+    font-size: 62px;
+    line-height: 1;
+    color: $dark;
+
+    @media #{$large-mobile} {
+        font-size: 90px;
+
+    }
+
+    @media #{$small-mobile} {
+        font-size: 62px;
+
+    }
+
+    @media #{$desktop-device,$tablet-device} {
+        font-size: 130px;
+
+    }
+
+    @media #{$big-device,$laptop-device} {
+        font-size: 150px;
+
+    }
+
+    span {
+        display: block;
+        font-weight: 600;
+    }
+}
+
+.cta-btn-group {
+    margin-top: 60px;
+    gap: 20px;
+}

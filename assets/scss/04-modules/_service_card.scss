@@ -1,0 +1,211 @@
+.service-card {
+    padding: 20px 20px;
+    background-color: $white;
+    border: 1px solid rgba($color: $dark, $alpha: 10%);
+    border-radius: 10px;
+    z-index: 1;
+    transition: $transition-base;
+
+    &:hover {
+        border-color: $dark;
+        box-shadow: 10px 4px 60px 0 rgba($color: #8E8E8E, $alpha: 25%);
+
+        .service-shape {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+
+    @media #{$big-device,$laptop-device} {
+        padding: 40px 70px;
+
+    }
+
+
+    @media #{$desktop-device,$tablet-device} {
+        padding: 40px 40px;
+
+    }
+
+}
+
+
+.service-shape {
+    transform: translateY(10px);
+    z-index: -1;
+    opacity: 0;
+}
+
+.service-icon {
+    margin-bottom: 30px;
+
+    @media #{$big-device,$laptop-device} {
+        margin-bottom: 70px;
+
+    }
+
+    @media #{$desktop-device,$tablet-device} {
+        margin-bottom: 40px;
+
+    }
+}
+
+.service-title {
+    font-size: 27px;
+    margin-bottom: 30px;
+
+    @media #{$large-mobile} {
+        font-size: 22px;
+
+    }
+}
+
+.service-text {
+    margin-bottom: 40px;
+    transition: $transition-base;
+}
+
+.service-link {
+    color: $dark;
+    transition: $transition-base;
+
+    &:hover {
+        .service-link-read-more-text {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.service-card-style-two {
+    &:hover {
+        background-color: $primary;
+
+        .service-link,
+        .service-text {
+            color: $white;
+        }
+    }
+}
+
+
+/* Service details page Css */
+
+.service-badges {
+    gap: 35px;
+
+    @media #{$laptop-device,$desktop-device,$tablet-device} {
+        gap: 30px;
+
+    }
+
+    @media #{$large-mobile} {
+        gap: 10px;
+    }
+
+    img {
+
+        @media #{$tablet-device} {
+            max-width: 80px;
+
+        }
+
+        @media #{$large-mobile} {
+            display: none;
+        }
+    }
+}
+
+.service-badge {
+    font-family: $Outfit;
+    border: 1px solid $dark;
+    background-color: $primary;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    color: $dark;
+
+    @media #{$laptop-device,$desktop-device,$tablet-device} {
+        font-size: 16px;
+
+    }
+
+
+    @media #{$large-mobile} {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    @media #{$small-mobile} {
+        padding: 8px 8px;
+        font-size: 12px;
+    }
+
+
+}
+
+.service-details-title {
+
+    color: $dark;
+    font-family: $Outfit;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 1.181;
+
+    @media #{$laptop-device,$big-device} {
+        font-size: 55px;
+
+    }
+
+    @media #{$desktop-device} {
+        font-size: 44px;
+
+    }
+
+    @media #{$tablet-device} {
+        font-size: 40px;
+
+    }
+
+    @media #{$extra-small-mobile} {
+        font-size: 32px;
+
+    }
+}
+
+.service-details-sub-heading {
+
+    color: $dark;
+    font-family: $Outfit;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 1.181;
+
+    @media #{$laptop-device,$big-device,$desktop-device,$tablet-device} {
+        font-size: 40px;
+        max-width: 550px;
+
+    }
+
+
+    @media #{$extra-small-mobile} {
+        font-size: 32px;
+
+    }
+}
+
+.service-icon-list {
+    gap: 20px;
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        span {
+            line-height: 1;
+        }
+    }
+}

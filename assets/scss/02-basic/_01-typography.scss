@@ -1,0 +1,182 @@
+/*----------------------------------------*/
+/*  01. Template default CSS
+/*----------------------------------------*/
+@mixin placeholder {
+	&::-webkit-input-placeholder {
+		@content;
+	}
+
+	&:-moz-placeholder {
+		@content;
+	}
+
+	&::-moz-placeholder {
+		@content;
+	}
+
+	&:-ms-input-placeholder {
+		@content;
+	}
+}
+
+/* Common Style */
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0 !important;
+	border: 0 !important;
+}
+
+
+body {
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	font-weight: 400;
+	font-style: normal;
+	line-height: $line-height-base;
+	color: $secondary;
+	background-color: $white;
+	padding: 0 !important;
+	overflow: auto !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $headings-font-family;
+	font-weight: $headings-font-weight;
+	line-height: $headings-line-height;
+	margin-top: 0;
+	color: $dark;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	line-height: inherit;
+
+	margin: 0;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+a,
+button {
+	line-height: inherit;
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	color: inherit;
+	transition-duration: 300ms;
+}
+
+a,
+button,
+img,
+input {
+	transition: $transition-base;
+}
+
+*:focus {
+	outline: none;
+}
+
+a:focus {
+	text-decoration: none;
+	color: inherit;
+	outline: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: $primary;
+}
+
+button,
+input[type="submit"] {
+	cursor: pointer;
+}
+
+
+img {
+	max-width: 100%;
+}
+
+input,
+textarea {
+	@include placeholder {
+		opacity: 1;
+	}
+}
+
+ul {
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+hr {
+	border-top-width: 2px;
+}
+
+.btn {
+	display: inline-flex;
+	align-items: center;
+	border: 1px solid transparent;
+	border-radius: 15px;
+	padding: 18px 30px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1;
+	opacity: 1;
+
+	@media #{$large-mobile} {
+		padding: 13px 15px;
+		font-size: 14px;
+	}
+
+}
+
+.btn-primary {
+	border-color: $primary;
+
+	&:hover {
+		background-color: $white;
+		border-color: $dark;
+	}
+}
+
+.btn-dark {
+	&:hover {
+		background-color: $white;
+		border-color: $white;
+		color: $dark;
+	}
+	&.btn-hover-outline{
+		border-color: $dark;
+	}
+}
+
+.btn-secondary-outline {
+	border-color: $dark;
+
+	&:hover {
+		color: $dark;
+		background-color: $primary;
+		border-color: $primary;
+	}
+}

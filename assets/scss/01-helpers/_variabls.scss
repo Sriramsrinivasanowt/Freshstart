@@ -1,0 +1,108 @@
+// Font Family
+$Manrope: "Manrope", sans-serif;
+$Outfit: "Outfit", sans-serif;
+
+// Responsive Variables
+$extraBig-device: "only screen and (min-width: 1920px)";
+$big-device: "only screen and (min-width: 1440px)";
+$laptop-device: "only screen and (min-width: 1280px) and (max-width: 1439px)";
+$desktop-device: "only screen and (min-width: 992px) and (max-width: 1279px)";
+$tablet-device: "only screen and (min-width: 768px) and (max-width: 991px)";
+$large-mobile: "only screen and (max-width: 767px)";
+$small-mobile: "only screen and (max-width: 575px)";
+$extra-small-mobile: "only screen and (max-width: 479px)";
+$sm-device: "only screen and (min-width: 576px)";
+
+//===============================
+// Bootstrap Variables Overright
+//===============================
+
+
+// Color
+$primary: #99E5B7;
+$secondary: #666666;
+$success: #4CAF50;
+$danger: #F44336;
+$warning: #FF9330;
+$info: #17A2B8;
+$light: #F8F9FA;
+$dark: #141414;
+// Custom Color
+$white: #FFFFFF;
+$primary2: #80BF99;
+
+
+// theme colors map
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "danger": $danger,
+  "warning": $warning,
+  "info": $info,
+  "light": $light,
+  "dark": $dark,
+);
+
+// Options
+$enable-negative-margins: true;
+// Spacing
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.3125,
+  // 5
+  2: $spacer * 0.625,
+  // 10
+  3: $spacer * 0.9375,
+  //15
+  4: $spacer * 1.25,
+  //20
+  5: $spacer * 1.625,
+  //26
+  6: $spacer * 1.875,
+  //30
+  7: $spacer * 2.1875,
+  //35
+  8: $spacer * 2.5,
+  //40
+  9: $spacer * 2.8125,
+  //45
+  10: $spacer * 3.125,
+  //50
+);
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1280px,
+  2xl: 1440px,
+  3xl: 1920px,
+);
+
+// Grid containers
+$container-max-widths: (
+  // sm: 540px,
+  sm: 100%,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+  2xl: 1290px,
+);
+//
+$grid-gutter-width: 30px;
+//
+$gutters: $spacers;
+// Transition
+$transition-base: all 0.3s ease 0s;
+
+// Typography
+$font-family-base: $Manrope;
+$font-size-base: 1rem;
+$line-height-base: 1.875;
+//
+$headings-font-family: $Outfit;
+$headings-font-weight: 700;
+$headings-line-height: 1.181;
