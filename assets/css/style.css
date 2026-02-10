@@ -68,7 +68,7 @@ h6 {
   font-weight: 700;
   line-height: 1.181;
   margin-top: 0;
-  color: #141414;
+  color: #0F1115;
 }
 
 .h1,
@@ -114,7 +114,7 @@ a:focus {
 
 a:hover {
   text-decoration: none;
-  color: #99E5B7;
+  color: #ff9d00;
 }
 
 button,
@@ -170,29 +170,29 @@ hr {
 }
 
 .btn-primary {
-  border-color: #99E5B7;
+  border-color: #ff9d00;
 }
 .btn-primary:hover {
   background-color: #FFFFFF;
-  border-color: #141414;
+  border-color: #0F1115;
 }
 
 .btn-dark:hover {
   background-color: #FFFFFF;
   border-color: #FFFFFF;
-  color: #141414;
+  color: #0F1115;
 }
 .btn-dark.btn-hover-outline {
-  border-color: #141414;
+  border-color: #0F1115;
 }
 
 .btn-secondary-outline {
-  border-color: #141414;
+  border-color: #0F1115;
 }
 .btn-secondary-outline:hover {
-  color: #141414;
-  background-color: #99E5B7;
-  border-color: #99E5B7;
+  color: #0F1115;
+  background-color: #ff9d00;
+  border-color: #ff9d00;
 }
 
 .section-padding-top {
@@ -229,7 +229,7 @@ hr {
 }
 
 .sub-title {
-  color: #141414;
+  color: #0F1115;
   font-weight: 600;
   font-size: 20px;
   gap: 25px;
@@ -241,13 +241,13 @@ hr {
 }
 
 .hr-span {
-  background-color: #141414;
+  background-color: #0F1115;
   height: 1px;
   width: 50px;
 }
 
 .title {
-  color: #141414;
+  color: #0F1115;
   font-family: "Outfit", sans-serif;
   font-weight: 250;
   font-size: 38px;
@@ -524,8 +524,8 @@ hr {
   border-radius: 5px;
 }
 .main-menu-link.main-menu-active-link, .main-menu-link:hover {
-  color: #141414;
-  background: #99E5B7;
+  color: #0F1115;
+  background: #ff9d00;
 }
 
 .contact-btn-wrap {
@@ -548,7 +548,7 @@ hr {
 }
 .menu-toggle-btn:hover {
   color: #FFFFFF;
-  background-color: #99E5B7;
+  background-color: #ff9d00;
 }
 
 .contact-btn-icon {
@@ -620,7 +620,7 @@ hr {
   }
 }
 .offcanvas-menu-item:hover a {
-  color: #99E5B7 !important;
+  color: #ff9d00 !important;
 }
 .offcanvas-menu-item:hover .animate-arrow-up {
   animation: moveUp 0.8s linear;
@@ -759,10 +759,10 @@ a#scrollUp {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #99E5B7;
+  background-color: #ff9d00;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #141414;
+  color: #0F1115;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }

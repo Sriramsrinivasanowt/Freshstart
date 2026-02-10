@@ -37,7 +37,7 @@ h6 {
   font-weight: 700;
   line-height: 1.181;
   margin-top: 0;
-  color: #141414;
+  color: #0F1115;
 }
 
 .h1,
@@ -83,7 +83,7 @@ a:focus {
 
 a:hover {
   text-decoration: none;
-  color: #99E5B7;
+  color: #ff9d00;
 }
 
 button,
@@ -139,29 +139,29 @@ hr {
 }
 
 .btn-primary {
-  border-color: #99E5B7;
+  border-color: #ff9d00;
 }
 .btn-primary:hover {
   background-color: #FFFFFF;
-  border-color: #141414;
+  border-color: #0F1115;
 }
 
 .btn-dark:hover {
   background-color: #FFFFFF;
   border-color: #FFFFFF;
-  color: #141414;
+  color: #0F1115;
 }
 .btn-dark.btn-hover-outline {
-  border-color: #141414;
+  border-color: #0F1115;
 }
 
 .btn-secondary-outline {
-  border-color: #141414;
+  border-color: #0F1115;
 }
 .btn-secondary-outline:hover {
-  color: #141414;
-  background-color: #99E5B7;
-  border-color: #99E5B7;
+  color: #0F1115;
+  background-color: #ff9d00;
+  border-color: #ff9d00;
 }
 
 .section-padding-top {
@@ -198,7 +198,7 @@ hr {
 }
 
 .sub-title {
-  color: #141414;
+  color: #0F1115;
   font-weight: 600;
   font-size: 20px;
   gap: 25px;
@@ -210,13 +210,13 @@ hr {
 }
 
 .hr-span {
-  background-color: #141414;
+  background-color: #0F1115;
   height: 1px;
   width: 50px;
 }
 
 .title {
-  color: #141414;
+  color: #0F1115;
   font-family: "Outfit", sans-serif;
   font-weight: 250;
   font-size: 38px;
@@ -493,8 +493,8 @@ hr {
   border-radius: 5px;
 }
 .main-menu-link.main-menu-active-link, .main-menu-link:hover {
-  color: #141414;
-  background: #99E5B7;
+  color: #0F1115;
+  background: #ff9d00;
 }
 
 .contact-btn-wrap {
@@ -517,7 +517,7 @@ hr {
 }
 .menu-toggle-btn:hover {
   color: #FFFFFF;
-  background-color: #99E5B7;
+  background-color: #ff9d00;
 }
 
 .contact-btn-icon {
@@ -589,7 +589,7 @@ hr {
   }
 }
 .offcanvas-menu-item:hover a {
-  color: #99E5B7 !important;
+  color: #ff9d00 !important;
 }
 .offcanvas-menu-item:hover .animate-arrow-up {
   animation: moveUp 0.8s linear;
@@ -728,11 +728,11 @@ a#scrollUp {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #99E5B7;
+  background-color: #ff9d00;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #141414;
+  color: #0F1115;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -922,7 +922,7 @@ a#scrollUp {
   line-height: 1;
 }
 .bread-crumb li:hover {
-  color: #99E5B7;
+  color: #ff9d00;
 }
 
 .breadcrumb-hr-line {
@@ -1010,14 +1010,14 @@ a#scrollUp {
   padding: 10px 15px;
   font-weight: 600;
   font-size: 16px;
-  color: #141414;
+  color: #0F1115;
   border-radius: 10px;
   border: 1px solid rgba(20, 20, 20, 0.1);
   transition: all 0.3s ease 0s;
 }
 
 .awards-title {
-  color: #141414;
+  color: #0F1115;
   font-weight: 500;
   font-size: 26px;
   transition: all 0.3s ease 0s;
@@ -1056,12 +1056,12 @@ a#scrollUp {
 }
 
 .awards-list-active {
-  background-color: #141414;
+  background-color: #0F1115;
   border-radius: 10px;
 }
 .awards-list-active .awards-date {
-  background-color: #99E5B7;
-  border-color: #141414;
+  background-color: #ff9d00;
+  border-color: #0F1115;
 }
 .awards-list-active .awards-title,
 .awards-list-active .awards-text {
@@ -1142,19 +1142,19 @@ a#scrollUp {
   background-color: #80BF99;
 }
 .primary-card::after {
-  background-color: #99E5B7;
+  background-color: #ff9d00;
 }
 
 .secondary-card::before {
-  background-color: #141414;
+  background-color: #0F1115;
 }
 .secondary-card::after {
   background-color: #F8F9FA;
-  border-color: #141414;
+  border-color: #0F1115;
 }
 
 .primary-white-card::before {
-  background-color: #99E5B7;
+  background-color: #ff9d00;
 }
 .primary-white-card::after {
   background-color: #FFFFFF;
@@ -1178,9 +1178,9 @@ a#scrollUp {
   transition: all 0.3s ease 0s;
 }
 .social-link:hover {
-  background-color: #99E5B7;
-  color: #141414;
-  border-color: #99E5B7;
+  background-color: #ff9d00;
+  color: #0F1115;
+  border-color: #ff9d00;
 }
 
 .service-card {
@@ -1192,7 +1192,7 @@ a#scrollUp {
   transition: all 0.3s ease 0s;
 }
 .service-card:hover {
-  border-color: #141414;
+  border-color: #0F1115;
   box-shadow: 10px 4px 60px 0 rgba(142, 142, 142, 0.25);
 }
 .service-card:hover .service-shape {
@@ -1246,7 +1246,7 @@ a#scrollUp {
 }
 
 .service-link {
-  color: #141414;
+  color: #0F1115;
   transition: all 0.3s ease 0s;
 }
 .service-link:hover .service-link-read-more-text {
@@ -1254,7 +1254,7 @@ a#scrollUp {
 }
 
 .service-card-style-two:hover {
-  background-color: #99E5B7;
+  background-color: #ff9d00;
 }
 .service-card-style-two:hover .service-link,
 .service-card-style-two:hover .service-text {
@@ -1288,14 +1288,14 @@ a#scrollUp {
 
 .service-badge {
   font-family: "Outfit", sans-serif;
-  border: 1px solid #141414;
-  background-color: #99E5B7;
+  border: 1px solid #0F1115;
+  background-color: #ff9d00;
   border-radius: 10px;
   padding: 10px 15px;
   font-weight: 600;
   font-size: 18px;
   line-height: 1;
-  color: #141414;
+  color: #0F1115;
 }
 @media only screen and (min-width: 1280px) and (max-width: 1439px), only screen and (min-width: 992px) and (max-width: 1279px), only screen and (min-width: 768px) and (max-width: 991px) {
   .service-badge {
@@ -1316,7 +1316,7 @@ a#scrollUp {
 }
 
 .service-details-title {
-  color: #141414;
+  color: #0F1115;
   font-family: "Outfit", sans-serif;
   font-weight: 500;
   font-size: 38px;
@@ -1344,7 +1344,7 @@ a#scrollUp {
 }
 
 .service-details-sub-heading {
-  color: #141414;
+  color: #0F1115;
   font-family: "Outfit", sans-serif;
   font-weight: 500;
   font-size: 38px;
@@ -1418,7 +1418,7 @@ a#scrollUp {
   font-weight: 500;
   line-height: 1;
   font-size: 50px;
-  color: #141414;
+  color: #0F1115;
 }
 @media only screen and (min-width: 1440px) {
   .fact-counter {
@@ -1584,7 +1584,7 @@ a#scrollUp {
 
 .accordion-button {
   position: relative;
-  color: #141414;
+  color: #0F1115;
   font-size: 18px;
   padding: 22px !important;
   font-weight: 500;
@@ -1599,7 +1599,7 @@ a#scrollUp {
 }
 
 .accordion-button:not(.collapsed) {
-  color: #141414;
+  color: #0F1115;
   background-color: #FFFFFF !important;
   box-shadow: none !important;
 }
@@ -1610,7 +1610,7 @@ a#scrollUp {
   border-radius: 50%;
   content: "+";
   background-image: none;
-  color: #141414;
+  color: #0F1115;
   border: 1px solid rgba(20, 20, 20, 0.1);
   display: flex;
   align-items: center;
@@ -1627,7 +1627,7 @@ a#scrollUp {
   background-image: none;
   transform: rotate(0deg);
   content: "-";
-  border: 1px solid #141414;
+  border: 1px solid #0F1115;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1715,7 +1715,7 @@ a#scrollUp {
 }
 
 .portfolio-card-style-one {
-  background-color: #99E5B7;
+  background-color: #ff9d00;
   transition: all 0.3s;
 }
 .portfolio-card-style-one:hover {
@@ -1726,8 +1726,8 @@ a#scrollUp {
   background-color: #F8F9FA;
 }
 .portfolio-card-style-two:hover {
-  background-color: #99E5B7;
-  border-color: #141414;
+  background-color: #ff9d00;
+  border-color: #0F1115;
 }
 
 .experience-card {
@@ -1760,7 +1760,7 @@ a#scrollUp {
   padding: 10px 15px;
   line-height: 1;
   margin-bottom: 20px;
-  border: 1px solid #141414;
+  border: 1px solid #0F1115;
   border-radius: 5px;
 }
 
@@ -1852,7 +1852,7 @@ a#scrollUp {
 
 .radial-progress circle.bar--animated {
   stroke-dasharray: 219.9114857513;
-  stroke: #99E5B7;
+  stroke: #ff9d00;
   stroke-dashoffset: 219.9114857513;
   stroke-width: 10px;
   stroke-linecap: round;
@@ -1910,7 +1910,7 @@ a#scrollUp {
   display: inline-block;
   width: 30px;
   height: 2px;
-  background-color: #99E5B7;
+  background-color: #ff9d00;
   margin-right: 30px;
 }
 
@@ -2050,7 +2050,7 @@ a#scrollUp {
 
 .blog-title {
   font-size: 22px;
-  color: #141414;
+  color: #0F1115;
   line-height: 1.458;
 }
 @media only screen and (min-width: 1920px) {
@@ -2104,13 +2104,13 @@ a#scrollUp {
   width: 45px;
   height: 45px;
   background-color: #F8F9FA;
-  border: 1px solid #141414;
+  border: 1px solid #0F1115;
   border-radius: 50%;
 }
 .blog-pagination-link.active, .blog-pagination-link:hover {
-  background-color: #99E5B7;
-  border-color: #99E5B7;
-  color: #141414;
+  background-color: #ff9d00;
+  border-color: #ff9d00;
+  color: #0F1115;
 }
 
 /* blog details */
@@ -2196,7 +2196,7 @@ a#scrollUp {
   background-color: #FFFFFF;
   line-height: 1;
   padding: 10px 14px;
-  color: #141414;
+  color: #0F1115;
   font-weight: 500;
   font-size: 15px;
   border: 1.2px solid rgba(16, 16, 16, 0.1);
@@ -2216,9 +2216,9 @@ a#scrollUp {
   }
 }
 .tags-link:hover {
-  color: #141414;
-  background-color: #99E5B7;
-  border-color: #99E5B7;
+  color: #0F1115;
+  background-color: #ff9d00;
+  border-color: #ff9d00;
 }
 
 .blog-info-card {
@@ -2253,7 +2253,7 @@ a#scrollUp {
   color: #666666;
 }
 .blog-socials a:hover {
-  color: #141414;
+  color: #0F1115;
 }
 
 .blog-media {
@@ -2281,13 +2281,13 @@ a#scrollUp {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background-color: #141414;
+  background-color: #0F1115;
 }
 
 .search-form .form-control {
   font-weight: normal;
   font-size: 16px;
-  border: 1px solid #141414;
+  border: 1px solid #0F1115;
   background-color: #FFFFFF;
   color: #666666;
   padding: 12px 20px;
@@ -2307,14 +2307,14 @@ a#scrollUp {
   background-color: transparent;
   border: 0;
   padding: 0;
-  color: #141414;
+  color: #0F1115;
 }
 
 .sidebar-title {
   font-size: 24;
   padding-bottom: 30px;
   margin-bottom: 40px;
-  border-bottom: 1px solid #141414;
+  border-bottom: 1px solid #0F1115;
 }
 
 .sidebar-category-lists {
@@ -2397,7 +2397,7 @@ a#scrollUp {
   font-weight: 200;
   font-size: 62px;
   line-height: 1;
-  color: #141414;
+  color: #0F1115;
 }
 @media only screen and (max-width: 767px) {
   .cta-title {
@@ -2488,9 +2488,9 @@ a#scrollUp {
 
 .category-card {
   padding: 30px 30px;
-  background-color: #99E5B7;
+  background-color: #ff9d00;
   border-radius: 15px;
-  box-shadow: -15px 15px 0px -7px #141414;
+  box-shadow: -15px 15px 0px -7px #0F1115;
 }
 @media only screen and (min-width: 1440px), only screen and (min-width: 1280px) and (max-width: 1439px) {
   .category-card {
@@ -2511,7 +2511,7 @@ a#scrollUp {
 }
 
 .category-card-sub {
-  color: #141414;
+  color: #0F1115;
   margin-bottom: 10px;
   line-height: 1;
 }
@@ -2519,7 +2519,7 @@ a#scrollUp {
 .category-card-title {
   font-weight: 500;
   font-size: 22px;
-  color: #141414;
+  color: #0F1115;
   margin-bottom: 0;
 }
 
@@ -2573,19 +2573,19 @@ a#scrollUp {
 }
 
 .related-product-card-style-one {
-  background-color: #99E5B7;
+  background-color: #ff9d00;
 }
 
 .related-product-card-style-two {
   background-color: #F8F9FA;
 }
 .related-product-card-style-two:hover {
-  background-color: #99E5B7;
-  border-color: #141414;
+  background-color: #ff9d00;
+  border-color: #0F1115;
 }
 
 .project-details-title {
-  color: #141414;
+  color: #0F1115;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 30px;
@@ -2647,17 +2647,17 @@ a#scrollUp {
   font-family: "Outfit", sans-serif;
   font-weight: normal;
   font-size: 16px;
-  border: 1px solid #141414;
+  border: 1px solid #0F1115;
   background-color: #F8F9FA;
-  color: #141414;
+  color: #0F1115;
   padding: 10px 20px;
   border-radius: 7px;
 }
 .contact-form .form-control::-moz-placeholder {
-  color: #141414;
+  color: #0F1115;
 }
 .contact-form .form-control::placeholder {
-  color: #141414;
+  color: #0F1115;
 }
 .contact-form textarea.form-control {
   min-height: 120px;
@@ -2681,7 +2681,7 @@ a#scrollUp {
   position: relative;
   width: 25px;
   height: 25px;
-  border: 2px solid #141414;
+  border: 2px solid #0F1115;
   border-radius: 50%;
 }
 
@@ -2701,7 +2701,7 @@ a#scrollUp {
 }
 
 .form-check-input:checked[type=checkbox]::after {
-  background-color: #141414;
+  background-color: #0F1115;
   display: block;
   width: 5px;
   height: 5px;
