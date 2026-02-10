@@ -1,83 +1,76 @@
 <?php
 
-//Import the PHPMailer class into the global namespace
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-//Sending Email from Local Web Server using PHPMailer			
+// Load PHPMailer files
 require 'phpmailer/src/PHPMailer.php';
 require 'phpmailer/src/Exception.php';
+require 'phpmailer/src/SMTP.php';
 
-//Create a new PHPMailer instance
-$mail = new PHPMailer();
-$mail->CharSet = 'UTF-8';
-$isSmtp = true;
+// Create PHPMailer instance
+$mail = new PHPMailer(true);
 
-if ($isSmtp) {
+try {
+    /* ===============================
+       SMTP CONFIGURATION
+    =============================== */
 
-    require 'phpmailer/src/SMTP.php';
-
-    //Tell PHPMailer to use SMTP
     $mail->isSMTP();
+    $mail->Host       = 'smtp.gmail.com';
+    $mail->SMTPAuth   = true;
+    $mail->Username   = 'sriram20ui@gmail.com';        // your Gmail
+    $mail->Password   = 'xjqmbctheqfglmlv';     // App Password (NO SPACES)
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port       = 587;
+    $mail->CharSet    = 'UTF-8';
 
-    //Enable SMTP debugging
-    $mail->SMTPDebug = 0;
+    /* ===============================
+       FORM DATA (SAFE)
+    =============================== */
 
-    //Ask for HTML-friendly debug output
-    $mail->Debugoutput = 'html';
+    $name    = htmlspecialchars($_POST['name'] ?? '');
+    $email   = filter_var($_POST['email'] ?? '', FILTER_SANITIZE_EMAIL);
+    $subject = htmlspecialchars($_POST['subject'] ?? 'New Contact Message');
+    $phone   = htmlspecialchars($_POST['phone'] ?? '');
+    $message = nl2br(htmlspecialchars($_POST['message'] ?? ''));
 
-    //Set the hostname of the mail server
-    $mail->Host = 'mail.test.com';
+    /* ===============================
+       EMAIL HEADERS
+    =============================== */
 
-    //Set the SMTP port number - likely to be 25, 465 or 587
-    $mail->Port = 587;
+    // From must be YOUR email (Gmail rule)
+    $mail->setFrom('YOUR_EMAIL@gmail.com', 'Portfolio Contact');
 
-    //Whether to use SMTP authentication
-    $mail->SMTPAuth = true;
+    // Where you receive the message
+    $mail->addAddress('YOUR_EMAIL@gmail.com');
 
-    //Username to use for SMTP authentication
-    $mail->Username = 'info@test.com';
+    // User email for reply
+    if (!empty($email)) {
+        $mail->addReplyTo($email, $name);
+    }
 
-    //Password to use for SMTP authentication
-    $mail->Password = '123456';
+    /* ===============================
+       EMAIL CONTENT
+    =============================== */
 
-}
+    $mail->isHTML(true);
+    $mail->Subject = $subject;
 
-// Form Fields Value Variables
-$name = filter_var($_POST['name'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-$email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-$subject = filter_var($_POST['subject'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-$phone = filter_var($_POST['phone'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-$message = filter_var($_POST['message'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-$message = nl2br($message);
+    $mail->Body = "
+        <strong>Name:</strong> {$name}<br>
+        <strong>Email:</strong> {$email}<br>
+        <strong>Phone:</strong> {$phone}<br><br>
+        <strong>Message:</strong><br>{$message}
+    ";
 
-//From email address and name (Change here)
-$mail->From = $email;
-$mail->FromName = $name;
+    /* ===============================
+       SEND EMAIL
+    =============================== */
 
-//Set who the message is to be sent to
-$mail->addAddress('demo@test.com');
+    $mail->send();
+    echo 'Message sent successfully!';
 
-//Set an alternative reply-to address
-$mail->addReplyTo($email, $name);
-
-//Send HTML or Plain Text email
-$mail->isHTML(true);
-
-// Message Body
-$body_message = "Name: " . $name . "<br>";
-$body_subject .= "Subject: " . $subject . "<br>";
-$body_message .= "Email: " . $email . "<br>";
-$body_message .= "\n\n" . $message;
-
-//Set the subject & Body Text
-$mail->Subject = "New Message from $name";
-$mail->Body = $body_message;
-
-//send the message, check for errors
-if (!$mail->send()) {
+} catch (Exception $e) {
     echo 'Mailer Error: ' . $mail->ErrorInfo;
-} else {
-    echo 'Message sent!';
 }
-
