@@ -132,7 +132,7 @@
                         </a>
 
                     </li>
-                    <li class="offcanvas-menu-item">
+                     <!-- <li class="offcanvas-menu-item">
                         <a href="service-details.html" class="text-white fw-bold d-flex flex-wrap align-items-center justify-content-between offcanvas-menu-link">My Expertise
                             Details
                             <span class="d-inline-block animate-arrow-up">
@@ -145,7 +145,7 @@
             </span>
                         </a>
 
-                    </li>
+                    </li> -->
                     <li class="offcanvas-menu-item">
                         <a href="blog-grid.html" class="text-white fw-bold d-flex flex-wrap align-items-center justify-content-between offcanvas-menu-link">Blog
                             <span class="d-inline-block animate-arrow-up">
@@ -274,6 +274,8 @@
             <span class="position-absolute line-verticle line-right"></span>
         </div>
         <!-- line pattern end -->
+         
+
 
         <img class="position-absolute hero-shape-top top-0 shape-width-400" src="assets/images/shapes/star-top.png" alt="Shapes">
         <img class="position-absolute hero-shape-bottom bottom-0 shape-width-400" src="assets/images/shapes/star-top.png" alt="Shapes">
@@ -281,8 +283,9 @@
             <div class="row align-items-center">
                 <div class="col-lg-7 col-xl-12">
                     <h2 class="hero-title fw-medium text-white" data-aos="fade-right">
-                        <span>Designing Digital </span>
-                         Products That Feel Simple and Work Better
+                        Designing Digital 
+                         <span id="typing-text"> </span>
+
                     </h2>
                    <div class="row align-items-center">
   
@@ -838,7 +841,7 @@
                 </div>
                 <div class="col-12 col-xl-6">
                     <h3 class="title">
-                    My Professional<span>Certificates & Qualifications</span>
+                    My Professional<span>Degrees</span>
                     </h3>
                 </div>
             </div>
@@ -1447,7 +1450,25 @@
     <!-- Footer End -->
 
 
+        <!-- Typing Script for header text -->
+        <script>
+            const text = "Products That Feel Simple and Work Better";
+            const typingElement = document.getElementById("typing-text");
 
+            let index = 0;
+
+            function typeEffect() {
+                if (index < text.length) {
+                    typingElement.innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(typeEffect, 50); // typing speed (lower = faster)
+                }
+            }
+
+            window.onload = function() {
+                typeEffect();
+            };
+        </script>
 
 
     <!-- JS Vendor, Plugins & Activation Script Files -->

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code - kjua</title>
+    <script src="https://cdn.jsdelivr.net/npm/kjua@0.1.1/dist/kjua.min.js"></script>
+    <style>body{ text-align:center; padding-top:40px;font-family:sans-serif; }</style>
+</head>
+<body>
+
+    <h2>Scan to Open Form</h2>
+    <div id="qr"></div>
+
+    <script>
+        const qr = kjua({
+            text: "https://docs.google.com/forms/d/e/1FAIpQLSfn-FVzS1OELclAAAbPrgo8ncpKseKR4rSL0_Cbl32S97W10w/viewform",
+            size: 300,
+            fill: "#000",
+            back: "#fff",
+            quiet: 1,
+            rounded: 30,
+        });
+        document.getElementById("qr").appendChild(qr);
+    </script>
+
+</body>
+</html>

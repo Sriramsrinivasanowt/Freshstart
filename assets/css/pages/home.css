@@ -773,19 +773,21 @@ a#scrollUp {
   margin-bottom: 30px;
   line-height: 1.2;
 }
-@media only screen and (max-width: 767px) {
-  .hero-title {
-    font-size: 65px;
-  }
-}
 @media only screen and (max-width: 479px) {
   .hero-title {
-    font-size: 38px;
+    font-size: 28px;
+    line-height: 1.25;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .hero-title {
+    font-size: 34px;
+    line-height: 1.25;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-title {
-    font-size: 70px;
+    font-size: 48px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1279px) {
@@ -2143,22 +2145,24 @@ a#scrollUp {
   line-height: 1;
   color: #0F1115;
 }
-@media only screen and (max-width: 767px) {
-  .cta-title {
-    font-size: 90px;
-  }
-}
 @media only screen and (max-width: 575px) {
   .cta-title {
-    font-size: 62px;
+    font-size: 36px;
+    line-height: 1.1;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1279px), only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .cta-title {
+    font-size: 48px;
+    line-height: 1.05;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1279px) {
   .cta-title {
     font-size: 130px;
   }
 }
-@media only screen and (min-width: 1440px), only screen and (min-width: 1280px) and (max-width: 1439px) {
+@media only screen and (min-width: 1280px) and (max-width: 1439px), only screen and (min-width: 1440px) {
   .cta-title {
     font-size: 150px;
   }
